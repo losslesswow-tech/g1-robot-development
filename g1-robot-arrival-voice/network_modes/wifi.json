@@ -1,0 +1,15 @@
+{
+  "mode": "wifi",
+  "interface": "wlp131s0f0",
+  "navigation_ip": "192.0.2.6",
+  "navigation_wifi_ip": "192.0.2.5",
+  "robot_wifi_ip": "192.0.2.18",
+  "robot_wifi_interface": "wlan0",
+  "robot_internal_interface": "eth0",
+  "ros_master_uri": "http://192.0.2.5:11311",
+  "ros_ip": "192.0.2.5",
+  "radar_ip": "192.0.2.14",
+  "audio_url": "http://127.0.0.1:18768",
+  "session_seconds": 1800,
+  "default_motion_enabled": false
+}

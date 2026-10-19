@@ -1,0 +1,14 @@
+test_cannot_skip_nodes_or_return_during_weight_acquisition (test_action_flow.FlowTests.test_cannot_skip_nodes_or_return_during_weight_acquisition) ... ok
+test_each_node_holds_then_advances_in_order (test_action_flow.FlowTests.test_each_node_holds_then_advances_in_order) ... ok
+test_explicit_return_from_paused_stage_releases_at_default (test_action_flow.FlowTests.test_explicit_return_from_paused_stage_releases_at_default) ... ok
+test_heartbeat_loss_releases_without_policy_replay (test_action_flow.FlowTests.test_heartbeat_loss_releases_without_policy_replay) ... ok
+test_node_hold_timeout_releases_despite_healthy_heartbeat (test_action_flow.FlowTests.test_node_hold_timeout_releases_despite_healthy_heartbeat) ... ok
+test_pause_freezes_phase_and_resume_completes_exact_policy_sample_count (test_action_flow.FlowTests.test_pause_freezes_phase_and_resume_completes_exact_policy_sample_count) ... ok
+test_single_shot_has_500_samples_and_returns_zero_without_replay (test_action_flow.FlowTests.test_single_shot_has_500_samples_and_returns_zero_without_replay) ... ok
+test_target_is_validated_copied_and_frozen (test_action_flow.FlowTests.test_target_is_validated_copied_and_frozen) ... ok
+test_preparation_does_not_refresh_an_expired_client_heartbeat (test_worker_lease.WorkerLeaseTests.test_preparation_does_not_refresh_an_expired_client_heartbeat) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.554s
+
+OK

@@ -1,0 +1,40 @@
+[Unit]
+Description=G1 Arm7 Joystick Watchdog (L2+R1 launches play)
+Documentation=https://github.com/lez666/g1-arm-teach-play
+# Wait for the network to be up and for the locomotion controller services
+# to publish rt/lowstate. The watchdog itself also waits for lowstate,
+# but giving the system a few extra seconds avoids noisy restart loops.
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=unitree
+Group=unitree
+WorkingDirectory=/home/operator/g1_arm7/build
+
+# Give Unitree's own services ~10 s to come up first.
+ExecStartPre=/bin/sleep 10
+ExecStart=/home/operator/g1_arm7/build/watchdog
+
+# Reasonable restart policy. If the binary crashes, systemd will bring
+# it back. If it exits cleanly (e.g. SIGTERM), systemd leaves it down.
+Restart=on-failure
+RestartSec=3
+
+# Send SIGTERM on stop so the watchdog's signal handler flips g_running.
+# If play was running inside waitpid(), SIGTERM propagates and play will
+# do its weight-ramp-down cleanly.
+KillSignal=SIGTERM
+TimeoutStopSec=15
+
+# Do NOT set PrivateTmp: we want the /tmp/g1_arm7_watchdog.lock flock
+# to be visible to interactive sessions too (single-instance across both).
+PrivateTmp=false
+
+# Logs go to journald. Use `journalctl -u g1-arm7-watchdog -f` to tail.
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

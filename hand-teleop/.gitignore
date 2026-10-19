@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+calibration.local.json
+*-pose.json

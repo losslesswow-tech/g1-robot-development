@@ -1,0 +1,11 @@
+{
+  "schema": 3,
+  "side": "R",
+  "channels": [0, 1, 2, 3, 4, 5],
+  "max_step": [500, 500, 500, 500, 500, 50],
+  "min_raw": [0, 0, 0, 0, 0, 950],
+  "max_raw": [500, 500, 500, 500, 500, 1000],
+  "hold_targets": [50, 0, 0, 0, 0, 1000],
+  "reference_actual": [50, 0, 0, 2, 8, 987],
+  "evidence": "2026-10-12 user explicitly confirmed first five right-hand channels raw0..500, thumb rotation remains950..1000. Read commanded and actual registers independently; preserve current pinky target50. This is an authorized manual trial range, not angle calibration or verified mechanical limits. One changed channel per explicit send; no clipping, compensation, automatic movement or retry."
+}

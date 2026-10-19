@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "robot_model": "Unitree G1",
+  "hand_model": "Inspire RH56DFTP",
+  "management_host": "192.0.2.1",
+  "ssh_user": "operator",
+  "navigation_container": "robot-navigation-example",
+  "bridge_container": "g1-bridge-migrated-20261013",
+  "robot_interface": "eno1",
+  "robot_host_ip": "192.0.2.2",
+  "host_development_root": "/home/operator/g1-migration-20261013/cutover/development",
+  "container_development_root": "/opt/g1-development",
+  "readonly_port": 8768,
+  "control_port": 8769,
+  "hands": {"L": "192.0.2.3", "R": "192.0.2.4"},
+  "hand_port": 6000,
+  "min_raw": [0, 0, 0, 0, 0, 950],
+  "max_raw": [1000, 1000, 1000, 1000, 1000, 1000]
+}

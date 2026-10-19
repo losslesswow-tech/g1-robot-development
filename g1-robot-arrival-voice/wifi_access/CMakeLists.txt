@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.10)
+project(g1_wifi_readonly LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+find_package(unitree_sdk2 REQUIRED CONFIG)
+find_package(Threads REQUIRED)
+add_executable(g1_wifi_readonly query.cpp)
+target_link_libraries(g1_wifi_readonly unitree_sdk2 Threads::Threads rt)

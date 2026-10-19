@@ -1,0 +1,47 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>G1 · 录制项目</title>
+<style>body{font:16px system-ui;margin:32px auto;max-width:1060px;padding:0 22px;background:#f4f6f9;color:#17283b}h1{font-size:28px}h2{font-size:20px}section{background:white;padding:24px;border-radius:12px;margin:18px 0}button{padding:12px 18px;margin:6px 8px 6px 0;font:inherit;border:0;border-radius:7px;background:#1264a3;color:white;cursor:pointer}button:disabled{background:#aab7c5;cursor:default}.stop{background:#a62728}input{font:inherit;padding:9px;max-width:90%}input[type=number]{width:90px}table{border-collapse:collapse;width:100%}td,th{padding:9px 5px;border-bottom:1px solid #e3e8ef;text-align:right}td:first-child,th:first-child{text-align:left}#status{font-size:22px;font-weight:650}#error{color:#a62728;min-height:22px}small,.muted{color:#526478}#timer{font-size:30px;font-variant-numeric:tabular-nums}code{overflow-wrap:anywhere}a{color:#1264a3}.row{display:flex;gap:20px;flex-wrap:wrap;align-items:center}.row label{display:block}</style>
+<h1>G1 · 拖动示教录制</h1><p><a href="http://127.0.0.1:8784/">前往轨迹回放 →</a></p>
+<section><div id="status">正在读取状态…</div><p id="summary" class="muted"></p><div id="timer">录制 0.0 秒</div><p id="error" role="alert"></p>
+<div class="row"><label>项目名称<br><input id="name" maxlength="80" placeholder="例如：按钮测试 A"></label><label>本次录制时限（秒）<br><input id="limit" type="number" min="30" max="600" step="1" value="300"></label></div>
+<p>进入低阻尼约需 4 秒。录制期间持续支撑双臂，腰部保持初姿；左右臂没有主动托举补偿。</p>
+<label><input id="onsite" type="checkbox"> 吊架、防倾保护、双臂支撑与持遥控器的监护者已就绪</label><p>
+<button id="stop-service" disabled>停止原厂上肢服务</button><span id="service-status">正在查询服务状态…</span></p><p><small>停止服务后会查询确认。此按钮只停用 g1_arm_example；随后再点击录制，才进入低阻尼。</small></p><p>
+<button id="restore-service" disabled hidden>重试恢复原厂上肢服务</button>
+<button id="begin" disabled>进入低阻尼并录制</button><button id="stop" class="stop" disabled>结束录制并保存</button><button id="save" disabled>保存项目名称</button><button id="new" disabled>新建下一项目</button></p>
+<small>结束时自动保存，确认零权重交还后恢复原厂上肢服务。继续托臂并保持范围清空，等待恢复确认；原厂服务可能调整双臂。新建项目只准备连接，点击录制才接管。</small></section>
+<section><h2>当前关键点</h2><input id="label" placeholder="关键点名称（可留空）" maxlength="100"><button id="mark" disabled>保存当前关键点</button><p id="points">关键点：0</p>
+<table><thead><tr><th>关节</th><th>左臂 °</th><th>右臂 °</th></tr></thead><tbody id="joints"></tbody></table><p><small>分段回放需至少一个关键点；整段回放直接使用连续采样，无需关键点。角度自动保存。</small></p><code id="directory"></code></section>
+<section><h2>录制项目库</h2><p class="muted">项目会永久保留在本机，名称可以重复，数据独立保存。</p><table><thead><tr><th>项目</th><th>关键点</th><th>录制时长</th><th>状态</th></tr></thead><tbody id="library"></tbody></table></section>
+<script nonce="NONCE">
+const token='TOKEN', el=id=>document.getElementById(id);
+const active=['acquiring','softening','teaching','releasing','restoring_service'];
+const phases={readonly:'只读 · 可开始录制',acquiring:'接管中 · 请继续托臂',softening:'降低刚度中 · 请继续托臂',teaching:'录制中 · 可手动拖动并保存关键点',releasing:'正在交还 · 请继续托臂',restoring_service:'手臂已交还 · 正在恢复原厂上肢服务',ended:'录制已保存 · 可以新建项目',ended_with_error:'录制已结束并保存 · 请查看原因',release_unconfirmed:'交还未确认 · 请现场检查'};
+const labels=['肩前后摆','肩侧摆','肩旋转','肘弯曲','腕旋转','腕俯仰','腕偏转'];
+const messages={browser_heartbeat_lost:'页面心跳中断，录制已停止',not_standing:'机器人尚未处于可开始录制的站立状态',another_arm_writer:'另一个上肢控制程序正在运行',transport_ended:'连接已结束，请新建下一项目'};
+let busy=false, actionError='', lastId=undefined, latest=null;
+function newName(){return '录制 '+new Date().toLocaleString('zh-CN',{hour12:false});}el('name').value=newName();
+async function action(name,data={}){const r=await fetch('/api/'+name,{method:'POST',headers:{'Content-Type':'application/json','X-CSRF-Token':token},body:JSON.stringify(data)});const j=await r.json();if(!r.ok)throw Error(j.error||'操作失败');return j;}
+async function operate(name,data={}){if(busy)return;busy=true;actionError='';render();try{await action(name,data);if(name==='new'){el('name').value=newName();el('label').value='';}if(name==='mark')el('label').value='';}catch(e){actionError=e.message;}finally{busy=false;await poll(false);}}
+el('begin').onclick=()=>operate('begin',{onsite:el('onsite').checked,name:el('name').value,max_seconds:Number(el('limit').value)});
+el('stop').onclick=()=>operate('stop');el('save').onclick=()=>operate('save',{name:el('name').value});el('new').onclick=()=>operate('new');el('mark').onclick=()=>operate('mark',{label:el('label').value});
+el('stop-service').onclick=()=>operate('stop-service',{onsite:el('onsite').checked});el('onsite').onchange=()=>render();
+el('restore-service').onclick=()=>operate('restore-service',{onsite:el('onsite').checked});
+function cell(row,value){const td=document.createElement('td');td.textContent=value;row.append(td);}
+function render(){if(!latest)return;const s=latest, moving=active.includes(s.phase), terminal=['ended','ended_with_error'].includes(s.phase);
+el('status').textContent=s.phase==='readonly'&&!s.connected?'连接未就绪 · 可查看项目库':phases[s.phase]||s.phase;if(terminal&&!s.saved)el('status').textContent='录制已结束 · 保存失败，请重试保存名称';el('summary').textContent=`FSM ${s.fsm??'—'}/${s.fsm_mode??'—'} · 权重 ${(s.weight??0).toFixed(3)} · 已发送 ${s.sent??0} 帧`;
+el('timer').textContent=`录制 ${(s.elapsed_s??0).toFixed(1)} 秒 / ${s.max_seconds??300} 秒${terminal?' · 已结束':s.phase==='releasing'?' · 已停止计时':''}`;
+const preflight=s.phase==='readonly'?(s.transport_error||(!s.service_stopped?'原厂上肢服务尚未停止，开始按钮暂不可用。':!s.api_match?'服务版本尚未核对通过。':'')):'';
+el('error').textContent=messages[actionError||s.error]||actionError||s.error||preflight;el('points').textContent='关键点：'+s.waypoints;el('directory').textContent=s.recording_directory||'开始录制后自动建立独立保存目录';
+if(s.recording_id!==lastId){if(s.name)el('name').value=s.name;lastId=s.recording_id;}
+const fresh=s.connected&&!s.finished&&Math.max(s.age_s??99,s.tick_age_s??99,s.transport_age_s??99)<.15;
+const service=s.service_control||{},switching=!!service.busy;
+el('service-status').textContent=switching?(service.operation==='restore'?'正在恢复并查询确认…':'正在停止并查询确认…'):(s.connected&&(s.rpc_age_s??99)<2?(s.service_stopped?'原厂上肢服务已停止':'原厂上肢服务正在运行'):service.result?.verified?'交还后查询已确认服务状态':'服务状态未确认，请新建只读会话')+(service.result?' · 上次操作：'+service.result.message:'');
+el('restore-service').hidden=!(terminal&&s.restore_result&&!s.restore_result.verified);el('restore-service').disabled=busy||switching||!terminal||!el('onsite').checked;
+el('stop-service').textContent=switching?'正在停止…':s.service_stopped?'原厂上肢服务已停止':'停止原厂上肢服务';
+el('stop-service').disabled=busy||switching||!(s.phase==='readonly'&&fresh&&s.fsm===501&&s.fsm_mode===0&&s.api_match&&(s.rpc_age_s??99)<2&&!s.service_stopped&&el('onsite').checked);
+el('begin').disabled=busy||switching||!(s.phase==='readonly'&&fresh&&s.fsm===501&&s.fsm_mode===0&&s.service_stopped&&s.api_match&&s.foreign_age_s>=1);
+el('stop').disabled=busy||!['acquiring','softening','teaching'].includes(s.phase);el('mark').disabled=busy||s.phase!=='teaching';el('save').disabled=busy||!terminal;el('new').textContent=s.phase==='readonly'&&!s.connected?'重新连接':'新建下一项目';el('new').disabled=busy||switching||!(terminal&&s.saved||s.phase==='readonly');el('name').disabled=busy||moving;el('limit').disabled=busy||s.phase!=='readonly';
+el('joints').replaceChildren();labels.forEach((name,i)=>{const row=document.createElement('tr');cell(row,name);cell(row,s.q?(s.q[15+i]*180/Math.PI).toFixed(2):'—');cell(row,s.q?(s.q[22+i]*180/Math.PI).toFixed(2):'—');el('joints').append(row);});
+el('library').replaceChildren();(s.recordings||[]).forEach(p=>{const row=document.createElement('tr');cell(row,p.name);cell(row,p.points);cell(row,p.duration_s==null?'历史记录':p.duration_s.toFixed(1)+' 秒');cell(row,p.playable?'已保存 · 可分段回放':p.continuous_playable?'已保存 · 可连续回放':p.saved?'已保存 · 无可回放片段':'录制中 / 未完成');el('library').append(row);});if(!s.recordings?.length){const row=document.createElement('tr');cell(row,'尚无录制项目');el('library').append(row);}}
+async function poll(schedule=true){try{latest=await(await fetch('/api/state')).json();render();if(['acquiring','softening','teaching'].includes(latest.phase))await action('heartbeat');}catch(e){el('error').textContent=e.message;}if(schedule)setTimeout(()=>poll(),300);}poll();
+</script></html>

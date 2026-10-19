@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import {allowsTrialEdit} from '../web/trial-edit.mjs';
+const baseline=[0,0,0,0,0,1000];
+const multi={schema:4,multi_channels:[0,1,2,3]};
+assert.equal(allowsTrialEdit(multi,baseline,[100,200,300,400,0,1000]),true);
+assert.equal(allowsTrialEdit(multi,baseline,[100,200,300,400,20,1000]),false);
+assert.equal(allowsTrialEdit(multi,baseline,[0,0,0,0,20,950]),false);
+assert.equal(allowsTrialEdit(multi,baseline,[0,0,0,0,20,1000]),true);
+assert.equal(allowsTrialEdit(multi,baseline,[0,0,0,0,0,950]),true);
+assert.equal(allowsTrialEdit({schema:3},baseline,[100,200,0,0,0,1000]),false);
+assert.equal(allowsTrialEdit(multi,baseline,baseline),true);
+assert.equal(allowsTrialEdit({schema:5,multi_channels:[0,1,2,3,4,5]},baseline,[100,200,300,400,200,950]),true);
+assert.equal(allowsTrialEdit({schema:6,multi_channels:[0,1,2,3,4,5]},baseline,[1000,1000,1000,1000,1000,950]),true);
+console.log('Four-finger editing and separate thumb controls: passed');

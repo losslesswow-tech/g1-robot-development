@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "name": "伸食指",
+  "action": "U",
+  "target": {"handAction": "right_index_extend"},
+  "side": "R",
+  "channel": 3,
+  "raw_target": 1000,
+  "other_channels": "hold_device_command_targets",
+  "speed": 300,
+  "retries": 0
+}

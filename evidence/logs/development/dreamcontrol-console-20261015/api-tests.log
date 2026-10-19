@@ -1,0 +1,11 @@
+test_get_and_preset_save_send_no_commands (test_console_api.HTTPTests.test_get_and_preset_save_send_no_commands) ... ok
+test_origin_csrf_and_coordinate_checks_block_actuation (test_console_api.HTTPTests.test_origin_csrf_and_coordinate_checks_block_actuation) ... ok
+test_delayed_idle_status_cannot_clear_pending_start_ownership (test_console_api.ServiceTests.test_delayed_idle_status_cannot_clear_pending_start_ownership) ... ok
+test_no_start_on_config_and_duplicate_start_is_rejected (test_console_api.ServiceTests.test_no_start_on_config_and_duplicate_start_is_rejected) ... ok
+test_ssh_backend_needs_explicit_server_control_flag (test_console_api.ServiceTests.test_ssh_backend_needs_explicit_server_control_flag) ... ok
+test_target_cannot_change_and_other_page_cannot_advance_active_run (test_console_api.ServiceTests.test_target_cannot_change_and_other_page_cannot_advance_active_run) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 1.331s
+
+OK

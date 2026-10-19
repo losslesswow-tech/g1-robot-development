@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>G1 机械臂调试台</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<header><div class="brand"><span class="brand-icon">↗</span><div><h1>机械臂调试台</h1><small>UNITREE G1 · 右臂七轴 · 关节角度调节</small></div></div><span id="backend" class="pill">正在加载</span></header>
+<main>
+<section class="viewport-card">
+ <div class="view-top"><span class="arm-tab">右臂 · 7 个关节</span><span id="readout-age" class="muted">尚未连接实物</span></div>
+ <div id="viewport" tabindex="0" aria-label="右臂三维预览，点击关节选择，上下拖动调整，空白处拖动旋转"></div>
+ <div class="view-bottom"><div><strong id="selection">肩前后摆</strong><small>点击关节选择 · 拖动调整角度</small></div><div class="view-buttons"><button id="front">正面</button><button id="side">侧面</button><button id="oblique">斜侧</button></div></div>
+ <div class="legend"><span><i class="dot target"></i>编辑目标</span><span><i class="dot actual"></i><span id="actual-label">实测姿态（连接后）</span></span><span>拖动只编辑，不自动发送</span></div>
+ <div class="telemetry"><div><small>运控状态</small><strong id="fsm">—</strong></div><div><small>上肢控制</small><strong id="phase">未接管</strong></div><div><small>本次剩余</small><strong id="remaining">—</strong></div></div>
+ <div id="fault-detail" role="alert" hidden></div>
+ <div id="leg-speed-status" role="status">腿速仅监测记录；电机状态异常仍中止。</div>
+ <div class="live-toolbar"><span id="quick-summary">离线编辑 · 拖动不会发送</span><div class="action-row"><button id="quick-send" class="primary" disabled>发送选中关节</button><button id="quick-release" class="danger" disabled>交还控制权</button></div></div>
+ <p class="geometry-note">三维显示采用已核对的 G1＋RH56DFTP 模型。地面、肩轴及实物零位尚未标定，不代表碰撞或平衡验收。</p>
+ <details class="data-details"><summary>双臂实时角度</summary><div id="both-arms">连接读取后显示。</div></details>
+</section>
+<aside>
+ <section class="panel"><div class="section-title"><h2>关节角度</h2><span class="muted">显示 ° · 内部 rad</span></div><p class="intro">与灵巧手相同：先编辑，再准备，最后手动发送选中的一路。</p>
+ <div class="step-row"><label for="step">微调步长</label><select id="step"><option value="0.1">0.1°</option><option value="0.5" selected>0.5°</option><option value="1">1°</option><option value="2">2°</option></select><span class="muted">＋ / − 只修改编辑值</span></div>
+ <div id="controls"></div><p class="note">滑条为官方模型范围；单次目标变化最多 20°，每次接管相对初始姿态范围 ±50°。轨迹峰速 5°/秒；20° 约需 7.5 秒。</p></section>
+ <section class="panel connection"><div class="section-title"><h2>连接与单步调试</h2><span id="connection-state" class="pill neutral">离线</span></div>
+ <p id="connection-description">连接只读取状态，不接管手臂。实物调试期间双臂均受接管，仅右臂目标可编辑，左臂保持接管时姿态。</p>
+ <div class="action-row"><button id="connect" class="primary">连接读取</button><button id="adopt" disabled>采用实测角度</button><button id="disconnect" disabled>断开</button></div>
+ <label class="check"><input id="onsite" type="checkbox">现场有人监护，周围已清空，手柄停止手段可用</label>
+ <div class="action-row"><button id="prepare" disabled>准备调试</button><button id="release" class="danger" disabled>停止调节并交还控制权</button></div>
+ <button id="send" class="send-button" disabled>发送肩前后摆目标</button>
+ <div id="send-summary" class="send-summary">选择一个关节，编辑后手动发送。</div>
+ <div id="message" role="status" aria-live="polite">离线编辑就绪 · 任何滑条操作都不会自动下发</div>
+ <details><summary>内置手臂服务</summary><p class="note">SDK 调试前须关闭宇树内置手臂服务。这里只处理 g1_arm_example，不切换整机运控模式。</p><button id="stop-service" disabled>关闭内置手臂服务</button><span id="service-state" class="muted">尚未查询</span></details>
+ <p class="note">每次接管最长 30 秒，剩余时间不足时拒绝新目标。页面断连或保护触发后停止接收目标，渐降接管权重；这不是硬件急停，也不保证按 5°/秒返回初始姿态。退出后需重新准备，不自动重试。</p>
+ </section>
+ <section class="panel compact"><div class="section-title"><h2>姿态文件</h2><span class="muted">仅保存编辑角度</span></div><div class="action-row"><button id="export">导出姿态</button><button id="import">导入姿态</button><input id="file" type="file" accept="application/json,.json" hidden></div><p class="note">导入不接管、不发送。大幅角度只用于离线编辑，不能绕过实物微调限幅。</p></section>
+</aside>
+</main><footer>长条连杆 / 球形关节 · 调试限幅来自本工具，非官方电机速度限值 · 不接入按压或导航</footer>
+<script type="module" src="/app.mjs"></script></body></html>

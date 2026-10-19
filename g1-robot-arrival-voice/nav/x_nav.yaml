@@ -1,0 +1,562 @@
+tasks:
+  - name: "当前路径"
+    command: "pwd"
+  - name: "当前目录"
+    command: "ls -l"
+  - name: "查看输入数据帧率"
+    command: "rostopic hz /livox/lidar /livox/imu"
+
+
+######################## UNITREE G1 ##########################
+robot:
+  sub_cmd_vel_topic: /cmd_vel
+  networkInterface: enp4s0
+##############################################################
+
+
+go2_pro:
+  kx: 0.6
+  ky: 0.2
+  kr: 2.5
+################### MID-360 配置 ############################
+bd_list: 1000000000
+cmdline_str: 1000000000
+cmdline_arg: 1000000000
+xfer_format: 0
+multi_topic: 0
+data_src: 0
+publish_freq: 10.0
+output_data_type: 0
+rviz_enable: false
+rosbag_enable: false
+frame_id: lidar_link
+enable_lidar_bag: true
+enable_imu_bag: true
+user_config_path: /nav_map/MID360_config.json
+# user_config_path: /home/operator/nav_map/MID360_config.json
+###########################################################
+
+
+x_nav:
+  password: "" 
+  nav_path: "/nav"  
+  nav_map_path: "/nav_map"
+  web_dist_path: "/catkin_ws/src/x_nav_control/scripts/dist"
+  nav_log_path: "/log"
+
+  sensor_lidar: MID_360
+  # sensor_lidar: RSHELIOS
+
+  robot_model: G1_BRIDGE
+
+  planner_run: false
+  slam_run: false
+
+  # planner_run: true
+  # slam_run: true
+  auto_run_commands_flags:
+    - true
+    - true
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false    
+  commands_config:
+    web_node:
+      - python3
+      - -m
+      - http.server
+      - "8000"
+    foxglove_node:
+      - roslaunch
+      - --screen
+      - foxglove_bridge
+      - foxglove_bridge.launch
+      - port:=8765
+      - send_buffer_limit:=100000000
+
+    pid_node:
+      - rosrun
+      - x_nav_control
+      - pid.py      
+    joy_node:
+      - rosrun
+      - joy
+      - joy_node
+    imu_node:
+      - rosrun
+      - yesense_imu
+      - yesense_imu_node
+    fixposition_rtk_switch_node:
+      - rosrun
+      - fixposition_driver_msgs
+      - main.py
+
+    seeker_sdk_node:
+      - rosrun
+      - x_nav_control
+      - seeker_s1_sdk.py
+
+    image_undistorter_node:
+      - rosrun
+      - x_nav_control
+      - image_undistorter.py
+    camera_to_web_node:
+      - rosrun
+      - x_nav_control
+      - camera_to_web.py
+    lidar_camera_fusion:
+      - /catkin_ws/lidar_camera_fusion
+      # - rosrun
+      # - lidar_camera_fusion
+      # - lidar_camera_fusion
+
+    fast_livo2_node:
+      - rosrun
+      - fast_livo
+      - fastlivo_mapping
+
+
+  #########################################################
+  pid:
+    Ki_linear_x: 0.01
+    Ki_linear_y: 0.01
+    Ki_angular_z: 0.01
+    Kd_linear_x: 0.00
+    Kd_linear_y: 0.00
+    Kd_angular_z: 0.00
+    input_current_vel: /mapping/current_velocity
+    input_targe_vel: /cmd_vel_raw
+    output_vel: /cmd_vel
+  ################# ######################################
+
+  slam:
+    common:
+      lid_topic:  "/livox/lidar"
+      imu_topic:  "/livox/imu"
+    
+      
+      gps_odom_topic: "/rtk/odom"
+      gpsodom_enableflag: false
+      auto_localization_enableflag: false
+
+      init_gps_align_distance: 30
+      init_gps_align_num: 30
+
+      imu_linkFrame: imu_link
+      lidar_linkFrame: lidar_link
+      base_linkFrame: base_link
+      odometryFrame: odom
+      mapFrame: map
+
+      point_filter_num: 2
+      lidar_type: 2                # 1 for Livox serials LiDAR, 2 for mid-360 3 
+      scan_line: 5
+
+      min_distance_f: 0.4                                #去除激光雷达前方0.1m点点云
+      min_distance_b: 0.35                                 #去除激光雷达后方0.4m点点云
+      min_distance_l: 0.35                                #去除激光雷达左方0.2m点点云
+      min_distance_r: 0.35                                #去除激光雷达右方0.2m点点云
+
+      lidarMaxRange: 70.0
+
+      time_sync_en: false         # ONLY turn on when external time synchronization is really not possible
+
+
+      filter_size_surf: 0.3
+      filter_size_map: 0.3
+      cube_side_length: 30000
+      ivox_grid_resolution: 0.5        # default=0.2
+      ivox_nearby_type: 6             # 6, 18, 26
+      max_iteration: 8
+      esti_plane_threshold: 0.1        # default=0.1
+
+
+      acc_cov: 0.1
+      gyr_cov: 0.1
+      b_acc_cov: 0.0001
+      b_gyr_cov: 0.0001
+
+      gps_noise_x: 3
+      gps_noise_y: 3
+      gps_noise_z: 5
+      gps_noise_r: 1
+      gps_noise_p: 1
+      gps_noise_yaw: 1             
+      gps_opt_distance: 10           
+
+      imu_init_num: 200
+
+      extrinsic_est_en: false      # true: enable the online estimation of IMU-LiDAR extrinsic
+      
+      base_link_hight: 0.78                              #base_link离地高度（G1 骨盆，原 GO2=0.5）
+      ground_distance: 3.75                                  #获取5m范围内的地面点云
+      clip_hight: 0.5                                     #去除base_link 0.3m以上的障碍物点云
+      ground_distancethreshold: 0.3                       #提取0.2m范围内的地面点云
+
+
+      imu_link_to_base_link_Trans: [0, 0, 0.47]           #雷达link到base link（G1 头顶，原 GO2=[0.2,0,0]）
+      imu_link_to_base_link_rpy: [0.0, 0.0, 0]  #angle   #雷达link到beas link 单位为角度 非 rad
+      
+      
+      lidar_link_to_imu_link_extrinsic_T: [ -0.011, -0.02329, 0.04412 ]   #lidar 到 imu 坐标系
+      lidar_link_to_imu_link_extrinsic_R: [ 1, 0, 0,
+                                            0, 1, 0,
+                                            0, 0, 1]
+
+
+      surroundingkeyframeAddingDistThreshold: 0.5    #室外1 
+      surroundingkeyframeAddingAngleThreshold: 0.2
+
+      surroundingkeyframeAddingDistThreshold_localization: 1.0
+      surroundingkeyframeAddingAngleThreshold_localization: 0.3
+
+      surroundingKeyframeDensity: 0.2               # 对当前关键帧  提取局部地图进行降采样 
+      surroundingKeyframeSearchRadius: 3        # 提取5m范围内的关键帧   
+      surroundingKeyframeMapLeafSize: 0.3          # 对局部地图进行降采样
+      surroundingKeyframeAddNewFrame: 5
+
+
+      loop_trigger_time_interval: 2
+      loopClosureEnableFlag: true
+      loopClosureFrequency: 1                    # Hz, regulate loop closure constraint add frequency
+      surroundingKeyframeSize: 10                   # submap size (when loop closure enabled)
+      historyKeyframeSearchRadius: 2.5            # meters, key frame that is within n meters from current pose will be considerd for loop closure
+      historyKeyframeSearchTimeDiff: 180.0           # seconds, key frame that is n seconds older will be considered for loop closure
+      historyKeyframeSearchNum: 10                 # number of hostory key frames will be fused into a submap for loop closure
+      loopClosureICPSurfLeafSize: 0.3               # downsample icp point cloud  
+      historyKeyframeFitnessScore: 0.3             # icp threshold, the smaller the better alignment
+
+      lidar_odom_noise: 0.001
+      Kinematic_odom_noise: 0.1
+      imu_noise_m: 1
+      imu_noise_g: 1
+      imu_opt_size: 1
+      imuType: 0                                ##6轴imu为0  9轴为1
+      imuopt_enableflag: false
+      auto_fitting_height_flag: true
+      fitting_height_noise: 2
+
+
+      Reconstruct_count: 0                  #
+      numberOfCores: 16
+      pub_filter_num: 4
+
+
+      localization_search_radius: 4
+      localization_localmap_leafsize: 0.3
+      localization_current_frame_leafsize: 0.3
+
+      globalMapVisualizationSearchRadius: 600
+      globalMapVisualizationPoseDensity: 2
+      globalMapVisualizationLeafSize: 0.35
+
+
+      current_frame_VisualizationLeafSize: 0.2 #当前帧的可视化点云密度  越小密度越高
+      safe_speed: 3  #机器人的安全速度，大于3m/s  则认为slam异常，并恢复为上一刻
+      initframe_FitnessScore: 0.3                 #重定位成功判断
+
+
+
+
+
+  planner:
+    topic_local_path_out: /x_nav/local_path
+    topic_goal_path_out: /x_nav/goal_path
+    topic_vel_out: /cmd_vel
+
+    nx_: 150
+    ny_: 150
+    n_middle: 75
+    d_resolution: 20
+    topic_base_link_pose_in: /base_link/odom
+    topic_lidar_noground_in: /x_nav/current_pointcloud_noground
+    topic_extern_navpath: /topological_path
+
+
+    ########################全局规划
+    vox_min_points_num: 5                     #不建议修改                      
+    vox_max_points_num: 10                     #不建议修改 
+    vox_resolution: 0.2                       #不建议修改 
+    up_ground_num: 2                          #不建议修改     
+    min_arround_ground_num: 2                 #不建议修改  
+    nav_keypoint_near_max_num: 20             #不建议修改  
+    vox_nav_keypoints_downsize_leaf: 0.3      #对全局规划特征点保留 0.4m 范围
+    global_plan_max_dz: 0.2                  #vox分辨率过小，这个也需要减小
+    global_plan_max_angle: 45                 #全局规划的特征点要求：高度变化超过30°取消
+    kdtree_search_k: 4.0                      #全局规划连接4.0倍范围内的点
+    
+    nav_keypoints_interpolate_distance: 0.1   #全局路径规划的结果插值
+    global_influence_radius: 0.6             #静态障碍物影响半径 影响全局规划
+    remove_historical_point_obs_radius: 0.3   #将历史轨迹点 半径0.2m 内的obs去处  
+    global_plan_obs_frame: 5                  #使用1帧的obs 影响golbal plan
+    replan_min_distance: 5                    #偏离距离达到后 重新global plan  
+
+    global_plan_obs_distance: 0.25  #将当前帧的Obs范围的0.25导航关键点禁用
+    global_plan_min_distance: 0.2       #如果小于0.3m直接直线规划
+    static_obs_vox_min_num: 15         #若建图过程中，在同一个位置检测到障碍10次则认为 是障碍物  影响全局规划 
+    static_obs_vox_min_height: 0.2     #静态障碍物最小的离地高度
+
+    
+    historical_keypoint_connect_min_distance: 0.3
+
+  ##################局部路径规划
+
+    max_v_y: 0.2
+    skip_track_point: 2
+    auto_skip: true               ##触发避障失败后 1秒内 尽可能跟踪最前面的导航点、 1s内没有触发避障失败 则跟踪 skip_track_point
+    local_plane_min_distance: 0.4
+
+    add_gloabl_point_num: 10
+    track_yaw: 1.2                  #45度 则先跟踪角度  #全向底盘没有必要
+    track_distance: 0.25             #跟踪局部路径中的 距离为0.3的点
+    reach_min_distance: 0.2        #这个距离内 则认为到达
+    reach_same_direction_min_yaw: 3.14  #67  度发现下认为同方向  
+    reach_same_direction_min_distance: 1  #同方向下， 目标点在身后 且距离小于1.5则认为到达
+    reach_same_direction_min_distance_x: 0.2#同方向下， 前方距离小于0.2 则认为到达
+
+
+    local_plan_obs_frame: 0                 #使用3帧的obs 影响local plan
+    cosmap_min_obs_point: 4                 #只要有一个点就认为是占据
+    
+    influence_radius_x: 0.3                 #被占据点前后 0.35m 设置设置为 obs   base link坐标系
+    influence_radius_y: 0.3                #被占据点左右 0.35m 设置设置为 obs   base link坐标系
+    target_velocity: 1           #跟踪速度
+    avoid_velocity: 0.5
+
+    avoid_base_link_low: -0.3                     #取base link下-0.3m点 做obs
+    avoid_base_link_hight: 0.5                    #取base link上0.6m点 做obs
+    is_obs_hight_: 0.1                           #去base link[is_obs_hight_, avoid_base_link_hight] 直接作为障碍物
+
+
+
+    replan_local_plan_fail_num: 6             #局部路径规划连续2次失败 重新全局路径规划 
+    
+    
+
+    track_local_waypoint_num: 30            #对前面第12个点进行局部路径规划       #全局路径为0.2m间隔
+    avoid_local_waypoint_num: 30            #触发避障 则对前面第15个点进行局部路径规划
+    check_waypoint_num: 8                  #检测前面15个点是否为obs
+
+
+
+    avoid_after_point_num: 4              #障碍物前的4个点不跟踪
+    avoid_front_point_num: 4              #障碍物后的4个点不跟踪
+
+    #pso参数
+    n_particles: 120
+    n_inherited: 1
+    pointNum: 1
+    max_speed: 50
+    initposmode: 0
+    pso_max_iter: 8
+    obs_factor: 0.5
+    w_inertial: 3.0 
+    w_social: 3.0
+    w_cognitive: 2.0
+
+########################astar
+    local_planner_method: 1
+    map_len: 201
+    rotation_r: 0.5
+    rotation_cost_k: 2
+    non_forward_move_cost_k: 1
+    reverse_move_cost_k: 2
+    influent_f: 0.3
+    influent_b: 0.3
+    influent_l: 0.2
+    influent_r: 0.2
+    aster_resolution: 0.02
+
+
+
+  #################速度跟踪
+    kp_x: 1
+    kp_y: 1
+    kp_yaw: 0.5
+
+
+
+  #####################3可视化
+    globalground_VisualizationLeafSize: 0.2
+
+    b_line: 3                         #3次b样条
+
+
+  ###################对齐终点###################
+    align_yaw: 0.6
+    align_vel: 0.2          ##对齐终点的速度（G1人形 0.3→0.2，降低终点对准速度减少过冲/往复）
+    align_distance: 0.5    ##终点的距离小于50cm则开始对齐
+    
+    reach_distance: 0.15   ##终点的距离小于15cm则认为到达（G1人形 0.05→0.15：5cm超出人形步态+定位精度，导致到点后原地踏步）
+    reach_yaw: 0.15          ##对齐终点的角度小于0.15rad(≈8.6°)则认为到达（原0.05rad≈2.9°小于定位航向噪声，永不达标→原地打转）
+    align_num: 3            ##连续3次在到达范围内，则认为到达
+    
+
+
+  rgb:
+    nav_image_path: "/nav_image"
+    max_cameras: 2
+    topic_lidar_in: "/x_nav/current_pointcloud_all"
+    topic_lidar_out: "/x_nav/rgb_pointcloud"
+    topic_lidar_odom_in: /lidar_link/odom
+    
+    lidar0:
+      T_imu_lidar:
+        [1.0, 0.0, 0.0, 0.011,
+        0.0, 1.0, 0.0, 0.02329,
+        0.0, 0.0, 1.0, -0.04412,
+        0.0, 0.0, 0.0, 1.0]
+      rostopic: /livox/lidar
+    cam0:
+      T_lidar_cam:    
+        [ 0.662709,  -0.748649,  -0.018507, 0.007756,
+          0.274071,   0.265461,  -0.924346, -0.034459,
+          0.696924,   0.607500,   0.381106, -0.029423,
+          0.0,   0.0,    0.0,    1.0]
+      distortion_coeffs: [0.066447, 0.020181, -0.011089, 0.001593]
+      intrinsics: [444.692928, 444.275742, 941.174899, 616.119951] # fx fy cx cy
+      resolution: [1920, 1200]
+
+      intrinsics_out: [300, 300, 480, 300]
+      resolution_out: [960, 600]
+      rostopic: /fisheye/left/image_raw
+      undistort_rostopic_out: /fisheye/left/image_rect
+      undistort_compressed_rostopic_out: /fisheye/left/image_rect/compressed
+
+    cam1:
+      T_lidar_cam:    
+        [ -0.730522,  -0.682757,  -0.013403, 0.022679,
+              0.256355,  -0.255992,  -0.932068, -0.031377,
+              0.632945,  -0.684332,   0.362036, -0.037197,
+            0.0,   0.0,    0.0,    1.0]
+      distortion_coeffs: [0.061737, 0.030631, -0.018546, 0.003310]
+      intrinsics: [443.914507, 444.570468, 957.8366089488175, 613.101509] # fx fy cx cy
+      resolution: [1920, 1200]
+
+      intrinsics_out: [300, 300, 480, 300]
+      resolution_out: [960, 600]
+
+      rostopic: /fisheye/right/image_raw
+      undistort_rostopic_out: /fisheye/right/image_rect
+      undistort_compressed_rostopic_out: /fisheye/right/image_rect/compressed
+
+
+
+
+
+
+laserMapping:
+
+  cam_model: Pinhole
+  scale: 1
+  cam_width: 960
+  cam_height: 600
+
+  cam_fx: 300
+  cam_fy: 300
+  cam_cx: 480
+  cam_cy: 300
+  cam_d0: 0
+  cam_d1: 0
+  cam_d2: 0
+  cam_d3: 0
+
+common:
+  img_topic: "fisheye/left/image_rect"
+  img_topic1: "fisheye/right/image_rect"
+
+  lid_topic: "/livox/lidar"
+  imu_topic: "/livox/imu"
+  img_en: 1
+  lidar_en: 1
+  ros_driver_bug_fix: false
+
+extrin_calib:
+  extrinsic_T: [ 0.011, 0.02329, -0.04412 ]    
+  extrinsic_R: [1, 0, 0, 0, 1, 0, 0, 0, 1]
+  Rcl: [  0.684499,  -0.729014,  -0.000560,
+        0.264701,   0.249254,  -0.931561,
+        0.679260,   0.637504,   0.363585]
+  Pcl: [  0.010605,  -0.058152,  -0.016719]
+
+  Rcl1: [ -0.701770, -0.712056,  0.022250,
+          0.263610, -0.288565, -0.920456,
+          0.661837, -0.640083,  0.390211]
+  Pcl1: [ -0.017264, -0.060620, -0.022487]
+
+
+time_offset: 
+  imu_time_offset: 0.0
+  img_time_offset: 0.0
+  exposure_time_init: 0.01
+
+preprocess:
+  point_filter_num: 1
+  filter_size_surf: 0.2
+  lidar_type: 7 # Livox Avia LiDAR
+  scan_line: 4
+  blind: 0.8
+
+vio:
+  max_iterations: 3
+  outlier_threshold: 1000 # 78 100 156 #100 200 500 700 infinite
+  img_point_cov: 1000 # 100 1000 
+  patch_size: 8
+  patch_pyrimid_level: 3
+  normal_en: false
+  raycast_en: true
+  inverse_composition_en: false
+  exposure_estimate_en: false
+  inv_expo_cov: 0.1
+
+
+
+imu:
+  imu_en: true
+  imu_int_frame: 80
+  acc_cov: 0.2 # 0.2
+  gyr_cov: 0.5 # 0.5
+  b_acc_cov: 0.001 # 0.1
+  b_gyr_cov: 0.001 # 0.1
+
+lio:
+  max_iterations: 4
+  dept_err: 0.02
+  beam_err: 0.05
+  min_eigen_value: 0.0025 # 0.005
+  voxel_size: 0.5
+  max_layer: 2
+  max_points_num: 50
+  layer_init_num: [5, 5, 5, 5, 5]
+
+local_map:  
+  map_sliding_en: false
+  half_map_size: 100
+  sliding_thresh: 8
+
+uav:
+  imu_rate_odom: false
+  gravity_align_en: false
+
+publish:
+  dense_map_en: true
+  pub_effect_point_en: false 
+  pub_plane_en: false
+  pub_scan_num: 1
+  blind_rgb_points: 0.0
+
+evo:
+  seq_name: "CBD_Building_01"
+  pose_output_en: false
+
+pcd_save:
+  pcd_save_en: true
+  colmap_output_en: false # need to set interval = -1
+  filter_size_pcd: 0.05
+  interval: -1

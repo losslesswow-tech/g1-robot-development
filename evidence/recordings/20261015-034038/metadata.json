@@ -1,0 +1,13 @@
+{
+  "robot": "Unitree G1 29DoF",
+  "arm_scope": "both arms",
+  "q_unit": "rad",
+  "time_unit": "s",
+  "sampling_target_hz": 50,
+  "ready_for_replay": false,
+  "initial_state_preserved": true,
+  "upstream_commit": "28ef85a7198eab82115087f8b3c82fa9f49ff961",
+  "phase": "ended",
+  "fingertip_height_calibrated": false,
+  "button_success_verified": false
+}

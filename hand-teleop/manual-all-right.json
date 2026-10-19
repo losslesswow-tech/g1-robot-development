@@ -1,0 +1,12 @@
+{
+  "schema": 5,
+  "side": "R",
+  "channels": [0, 1, 2, 3, 4, 5],
+  "multi_channels": [0, 1, 2, 3, 4, 5],
+  "max_step": [500, 500, 500, 500, 500, 50],
+  "min_raw": [0, 0, 0, 0, 0, 950],
+  "max_raw": [500, 500, 500, 500, 500, 1000],
+  "hold_targets": [500, 500, 500, 500, 0, 1000],
+  "reference_actual": [500, 499, 500, 500, 1, 987],
+  "evidence": "2026-10-12 user reported multichannel control normal and authorized all channels of both hands. Each selected hand may submit any subset of its six channels as one explicit target group. Preserve current four-finger target500; existing raw ranges retained. No motion on enable, no angle calibration claimed, no automatic retry or hidden target compensation."
+}

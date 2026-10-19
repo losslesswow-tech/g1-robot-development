@@ -1,0 +1,36 @@
+{
+  "retrieved_date": "2026-10-13",
+  "official_repository": "https://github.com/unitreerobotics/unitree_ros",
+  "commit": "5994d4faef0a9cadd3287f8de0199a67eeb2a259",
+  "files": [
+    {
+      "name": "g1_29dof_rev_1_0.urdf",
+      "url": "https://raw.githubusercontent.com/unitreerobotics/unitree_ros/5994d4faef0a9cadd3287f8de0199a67eeb2a259/robots/g1_description/g1_29dof_rev_1_0.urdf",
+      "sha256": "4aa267edc4eb2458f43c15efb4a29590006112fa188005e8c5a79867f46eb629"
+    },
+    {
+      "name": "g1_29dof_rev_1_0_with_inspire_hand_FTP.urdf",
+      "url": "https://raw.githubusercontent.com/unitreerobotics/unitree_ros/5994d4faef0a9cadd3287f8de0199a67eeb2a259/robots/g1_description/g1_29dof_rev_1_0_with_inspire_hand_FTP.urdf",
+      "sha256": "63097d7366e1903b595c6adbdb187b205f5c1b1189088ca5aea32d25622415cb"
+    },
+    {
+      "name": "right_base_link.STL",
+      "url": "https://raw.githubusercontent.com/unitreerobotics/unitree_ros/5994d4faef0a9cadd3287f8de0199a67eeb2a259/robots/g1_description/meshes/right_base_link.STL",
+      "sha256": "c6cfc437d1af11e19ee1323a0be048df0732531cae3388a076b4f2c2b2e89e50",
+      "upstream_sha256": "77930c4a5df7536f95883e3f50b3fc21a12cb34bfc0b03b71ab859d166595b70"
+    },
+    {
+      "name": "right_index_1.STL",
+      "url": "https://raw.githubusercontent.com/unitreerobotics/unitree_ros/5994d4faef0a9cadd3287f8de0199a67eeb2a259/robots/g1_description/meshes/right_index_1.STL",
+      "sha256": "233f27af72a1e39175c67eaa39278be426acd0c7990a5e74c5d694fa8fd5d5bc",
+      "upstream_sha256": "841fb085be3cb6241afd61e980c7d485979ea148d4d5fc7f3ef18cbc965849c7"
+    },
+    {
+      "name": "right_index_2.STL",
+      "url": "https://raw.githubusercontent.com/unitreerobotics/unitree_ros/5994d4faef0a9cadd3287f8de0199a67eeb2a259/robots/g1_description/meshes/right_index_2.STL",
+      "sha256": "56a5175ca988899f32185998b017fe0e53698995dd41c269c2300f5b4cd059bf",
+      "upstream_sha256": "6fe0e0a17722a4f94da64f2968dca657968749cbc4e3e4efd923004b1fe220c4"
+    }
+  ],
+  "publication_note": "Historical provenance; anonymized snapshot hashes are in root release-manifest.json"
+}

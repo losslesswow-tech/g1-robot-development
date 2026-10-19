@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.10)
+project(g1_dreamcontrol_transport LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+find_package(unitree_sdk2 REQUIRED CONFIG)
+add_executable(g1_dreamcontrol_transport native_transport.cpp)
+target_link_libraries(g1_dreamcontrol_transport unitree_sdk2)
+target_compile_options(g1_dreamcontrol_transport PRIVATE -Wall -Wextra -Wpedantic)

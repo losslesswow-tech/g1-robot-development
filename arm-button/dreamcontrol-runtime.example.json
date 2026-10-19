@@ -1,0 +1,8 @@
+{
+  "host": "192.0.2.1",
+  "user": "operator",
+  "python": "/home/operator/g1-dreamcontrol-offline-20261015/.venv/bin/python",
+  "worker_path": "/home/operator/g1-dreamcontrol-offline-20261015/console/4d0f80218e888736/console_worker.py",
+  "runtime_path": "/home/operator/g1-dreamcontrol-offline-20261015/console/4d0f80218e888736/runtime.json",
+  "version": "4d0f80218e888736"
+}

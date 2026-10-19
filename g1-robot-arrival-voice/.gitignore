@@ -1,0 +1,23 @@
+# 备份 / 临时
+*.bak
+*.bak[0-9]*
+*.orig*
+*~
+*.swp
+.DS_Store
+__pycache__/
+*.pyc
+
+# 大体积归档与构建中间产物（可重新生成，见 README）
+*.tar.gz
+*.tgz
+*.deb
+
+# 运行期日志与数据
+*.log
+*.bag
+
+# Arrival voice local state; retain live database outside the checkout.
+.local-voice/
+*.sqlite3
+*.sqlite3.lock

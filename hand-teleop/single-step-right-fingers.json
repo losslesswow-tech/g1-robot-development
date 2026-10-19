@@ -1,0 +1,11 @@
+{
+  "schema": 2,
+  "side": "R",
+  "channels": [0, 1, 2, 3, 4, 5],
+  "max_step": 50,
+  "min_raw": [0, 0, 0, 0, 0, 950],
+  "max_raw": [50, 50, 50, 50, 50, 1000],
+  "hold_targets": [0, 0, 0, 0, 0, 1000],
+  "reference_actual": [0, 6, 0, 1, 15, 987],
+  "evidence": "2026-10-12 user requested all right-finger controls. Read ANGLE_SET separately from ANGLE_ACT; commissioning window is +/-50 around saved device targets. No right-hand angle, axis or endpoint calibration is claimed. One changed channel per manually submitted target; other channels retain literal device targets."
+}

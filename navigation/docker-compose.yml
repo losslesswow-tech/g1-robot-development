@@ -1,0 +1,36 @@
+name: g1-navigation
+
+services:
+  navigation:
+    image: g1-navigation:noetic-safe
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NAVIGATION_BASE_IMAGE: "${NAVIGATION_BASE_IMAGE:registry.example.invalid/robot/navigation:example"
+    container_name: g1-navigation-noetic
+    network_mode: host
+    restart: "no"
+    read_only: true
+    tmpfs:
+      - /tmp
+      - /root/.ros
+      - /log
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    environment:
+      ROS_DISTRO: noetic
+      ROS_MASTER_URI: "http://192.0.2.6:11311"
+      ROS_IP: "192.0.2.6"
+      DDS_INTERFACE: eth0
+      ROS_DOMAIN_ID: "0"
+      ENABLE_MOTION: "false"
+      AUTO_START: "false"
+      NAVIGATION_AUTO_START: "false"
+      ALLOW_CMD_VEL: "false"
+      REQUIRE_LOCAL_ROS_IP: "true"
+      X_NAV_CONFIG: /nav_map/x_nav.yaml
+    command: ["hold"]
+    stop_grace_period: 5s

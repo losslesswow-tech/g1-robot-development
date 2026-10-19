@@ -1,0 +1,8 @@
+# Prepared by scripts/fetch_unitree_sdk2_official.sh; contains vendor binaries.
+unitree_sdk2/
+
+# Local catkin/Docker build output.
+build/
+devel/
+install/
+

@@ -1,0 +1,17 @@
+{
+  "mode": "offline_simulation_only",
+  "repository": "https://github.com/GenRobo/DreamControl",
+  "revision": "ec28b508313d6837de52c68247fbc8cf81fe4935",
+  "policy_sha256": "c24af360a2252c372fbf6f1622bec5fdece1f3407838f2597cd2c133adcbceba",
+  "policy_size_bytes": 940056,
+  "coordinate_frame": "robot_root_relative",
+  "units": "m",
+  "target_xyz_m": [0.5, -0.23, 0.5],
+  "target_randomization": false,
+  "policy_duration_s": 10.0,
+  "button_press_time_s": 2.925,
+  "return_duration_s": 2.0,
+  "simulation_dt_s": 0.002,
+  "control_dt_s": 0.02,
+  "note": "Requested z=0.50 m test, outside the author deployment clamp. x/y and pretrained policy unchanged. Relative height is not a calibrated floor height."
+}

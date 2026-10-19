@@ -1,0 +1,11 @@
+{
+  "baseline": "<PROJECT_ROOT>\\dreamcontrol-button\\live\\native_transport.cpp",
+  "baseline_sha256": "c6fc2987b24a12dc2bdce68334b4b1c37b7cf531e41b2db7b337d0f4b02369de",
+  "files": {
+    "CMakeLists.txt": "3d4aadc0b08fd6acb84ca6d36a746b4758d4f8e8c933baeff602764147dbaa1d",
+    "teach_transport.cpp": "480991c032d842badb97055ad59148092a48441d1e4fd06dd1a992203730db8a"
+  },
+  "controller_started": false,
+  "actuator_commands_sent": 0,
+  "publication_note": "Historical provenance; anonymized snapshot hashes are in root release-manifest.json"
+}

@@ -1,0 +1,64 @@
+RUN /usr/bin/python3 -m venv /home/operator/g1-dreamcontrol-offline-20261015/.venv
+The virtual environment was not created successfully because ensurepip is not
+available.  On Debian/Ubuntu systems, you need to install the python3-venv
+package using the following command.
+
+    apt install python3.10-venv
+
+You may need to use sudo with that command.  After installing the python3-venv
+package, recreate your virtual environment.
+
+Failing command: /home/operator/g1-dreamcontrol-offline-20261015/.venv/bin/python3
+
+RUN /home/operator/g1-dreamcontrol-offline-20261015/.venv/bin/python -c import runpy,sys; sys.path.insert(0,sys.argv.pop(1)); runpy.run_module('pip',run_name='__main__') /home/operator/g1-dreamcontrol-offline-20261015/wheels/pip-25.2-py3-none-any.whl install --no-index /home/operator/g1-dreamcontrol-offline-20261015/wheels/pip-25.2-py3-none-any.whl
+Processing ./g1-dreamcontrol-offline-20261015/wheels/pip-25.2-py3-none-any.whl
+Installing collected packages: pip
+Successfully installed pip-25.2
+RUN /home/operator/g1-dreamcontrol-offline-20261015/.venv/bin/python -m pip install --disable-pip-version-check --timeout 30 --retries 2 --only-binary=:all: numpy==1.26.4 PyYAML==6.0.2 mujoco==3.3.7
+Collecting numpy==1.26.4
+  Downloading numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+Collecting PyYAML==6.0.2
+  Downloading PyYAML-6.0.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.1 kB)
+Collecting mujoco==3.3.7
+  Downloading mujoco-3.3.7-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (41 kB)
+Collecting absl-py (from mujoco==3.3.7)
+  Downloading absl_py-2.5.1-py3-none-any.whl.metadata (3.3 kB)
+Collecting etils[epath] (from mujoco==3.3.7)
+  Downloading etils-1.13.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting glfw (from mujoco==3.3.7)
+  Downloading glfw-2.10.2-py2.py3-none-manylinux_2_28_x86_64.whl.metadata (5.5 kB)
+Collecting pyopengl (from mujoco==3.3.7)
+  Downloading pyopengl-3.1.10-py3-none-any.whl.metadata (3.3 kB)
+Collecting fsspec (from etils[epath]->mujoco==3.3.7)
+  Downloading fsspec-2026.9.0-py3-none-any.whl.metadata (10 kB)
+Collecting importlib_resources (from etils[epath]->mujoco==3.3.7)
+  Downloading importlib_resources-7.1.0-py3-none-any.whl.metadata (4.0 kB)
+Collecting typing_extensions (from etils[epath]->mujoco==3.3.7)
+  Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting zipp (from etils[epath]->mujoco==3.3.7)
+  Downloading zipp-4.1.1-py3-none-any.whl.metadata (3.6 kB)
+Downloading numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.2/18.2 MB 1.6 MB/s  0:00:11
+Downloading PyYAML-6.0.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (751 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 751.2/751.2 kB 3.6 MB/s  0:00:00
+Downloading mujoco-3.3.7-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.8/6.8 MB 4.6 MB/s  0:00:01
+Downloading absl_py-2.5.1-py3-none-any.whl (137 kB)
+Downloading etils-1.13.0-py3-none-any.whl (170 kB)
+Downloading fsspec-2026.9.0-py3-none-any.whl (221 kB)
+Downloading glfw-2.10.2-py2.py3-none-manylinux_2_28_x86_64.whl (248 kB)
+Downloading importlib_resources-7.1.0-py3-none-any.whl (37 kB)
+Downloading pyopengl-3.1.10-py3-none-any.whl (3.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 5.3 MB/s  0:00:00
+Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Downloading zipp-4.1.1-py3-none-any.whl (10 kB)
+Installing collected packages: pyopengl, glfw, zipp, typing_extensions, PyYAML, numpy, importlib_resources, fsspec, etils, absl-py, mujoco
+
+Successfully installed PyYAML-6.0.2 absl-py-2.5.1 etils-1.13.0 fsspec-2026.9.0 glfw-2.10.2 importlib_resources-7.1.0 mujoco-3.3.7 numpy-1.26.4 pyopengl-3.1.10 typing_extensions-4.16.0 zipp-4.1.1
+RUN /home/operator/g1-dreamcontrol-offline-20261015/.venv/bin/python -m pip install --disable-pip-version-check --timeout 30 --retries 2 --only-binary=:all: --index-url https://download.pytorch.org/whl/cpu torch==2.7.1+cpu
+Looking in indexes: https://download.pytorch.org/whl/cpu
+Collecting torch==2.7.1+cpu
+  WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='download-r2.pytorch.org', port=443): Read timed out. (read timeout=30.0)")': /whl/cpu/torch-2.7.1%2Bcpu-cp310-cp310-manylinux_2_28_x86_64.whl.metadata
+  WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='download-r2.pytorch.org', port=443): Read timed out. (read timeout=30.0)")': /whl/cpu/torch-2.7.1%2Bcpu-cp310-cp310-manylinux_2_28_x86_64.whl.metadata
+ERROR: Could not install packages due to an OSError: HTTPSConnectionPool(host='download-r2.pytorch.org', port=443): Max retries exceeded with url: /whl/cpu/torch-2.7.1%2Bcpu-cp310-cp310-manylinux_2_28_x86_64.whl.metadata (Caused by ReadTimeoutError("HTTPSConnectionPool(host='download-r2.pytorch.org', port=443): Read timed out. (read timeout=30.0)"))
+

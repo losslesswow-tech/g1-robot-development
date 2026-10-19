@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "description": "仅供离线示意。角度是模型关节弯曲角，不是已测量的实物角度。不得把 verified 直接改为 true 代替标定。",
+  "model": {
+    "finger_axis": [1, 0, 0],
+    "finger_secondary_ratio": 0.7,
+    "thumb_base": [-0.49, -0.13, 0],
+    "thumb_rest_yaw_degrees": 45,
+    "thumb_rotation_axis": [0, 1, 0],
+    "thumb_bend_axis": [1, 0, 0],
+    "thumb_secondary_ratio": 0.65
+  },
+  "hands": {
+    "L": {
+      "verified": false,
+      "model_axes_verified": false,
+      "channels": [
+        {"index": 0, "points": [{"degrees": 0, "raw": 1000}, {"degrees": 85, "raw": 0}], "evidence": ""},
+        {"index": 1, "points": [{"degrees": 0, "raw": 1000}, {"degrees": 85, "raw": 0}], "evidence": ""},
+        {"index": 2, "points": [{"degrees": 0, "raw": 1000}, {"degrees": 85, "raw": 0}], "evidence": ""},
+        {"index": 3, "points": [{"degrees": 0, "raw": 1000}, {"degrees": 85, "raw": 0}], "evidence": ""},
+        {"index": 4, "points": [{"degrees": 0, "raw": 1000}, {"degrees": 70, "raw": 0}], "evidence": ""},
+        {"index": 5, "points": [{"degrees": 0, "raw": 0}, {"degrees": 75, "raw": 1000}], "evidence": ""}
+      ]
+    },
+    "R": {
+      "verified": false,
+      "model_axes_verified": false,
+      "channels": [
+        {"index": 0, "points": [{"degrees": 0, "raw": 1000}, {"degrees": 85, "raw": 0}], "evidence": ""},
+        {"index": 1, "points": [{"degrees": 0, "raw": 1000}, {"degrees": 85, "raw": 0}], "evidence": ""},
+        {"index": 2, "points": [{"degrees": 0, "raw": 1000}, {"degrees": 85, "raw": 0}], "evidence": ""},
+        {"index": 3, "points": [{"degrees": 0, "raw": 1000}, {"degrees": 85, "raw": 0}], "evidence": ""},
+        {"index": 4, "points": [{"degrees": 0, "raw": 1000}, {"degrees": 70, "raw": 0}], "evidence": ""},
+        {"index": 5, "points": [{"degrees": 0, "raw": 0}, {"degrees": 75, "raw": 1000}], "evidence": ""}
+      ]
+    }
+  }
+}

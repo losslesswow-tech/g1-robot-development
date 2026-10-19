@@ -1,0 +1,16 @@
+# Future Jetson profile: the ARM64 navigation container and bridge both use
+# host networking on 192.0.2.8.  This file does not provide a navigation
+# image; that image must first be rebuilt and verified as genuine linux/arm64.
+services:
+  g1-bridge:
+    environment:
+      ROS_MASTER_URI: "http://192.0.2.8:11311"
+      ROS_IP: "192.0.2.8"
+      DDS_INTERFACE: eth0
+      ROS_DOMAIN_ID: "0"
+      ENABLE_MOTION: "false"
+      AUTO_START: "false"
+      MOTION_LOCKED: "true"
+      DEPLOYMENT_MODE: colocated_jetson
+      REQUIRE_ROS_MASTER: "true"
+      ROS_MASTER_CHECK_TIMEOUT_SEC: "3"

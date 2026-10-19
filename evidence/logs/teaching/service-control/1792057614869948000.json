@@ -1,0 +1,128 @@
+{
+  "service": "g1_arm_example",
+  "operation": "restore",
+  "started_at": 1792057611.5461845,
+  "motion_commands_sent": 0,
+  "checksum": {
+    "returncode": 0,
+    "stdout": "f8fc665de703bcd43658c2fb1822a9d6a02e37da65ba616829ee7edb2612af6d  /opt/g1-development/arm-teach-service/releases/3bbcf92c8169bb28/g1_builtin_arm_service\n",
+    "stderr": "",
+    "events": []
+  },
+  "before": {
+    "returncode": 0,
+    "stdout": "{\"event\":\"api_version\",\"client\":\"1.0.0.2\",\"server\":\"1.0.0.2\"}\n{\"event\":\"service_list\",\"phase\":\"before\",\"return_code\":0,\"services\":[{\"name\":\"g1_arm_example\",\"status_raw\":1,\"protect_raw\":0}]}\n",
+    "stderr": "",
+    "events": [
+      {
+        "event": "api_version",
+        "client": "1.0.0.2",
+        "server": "1.0.0.2"
+      },
+      {
+        "event": "service_list",
+        "phase": "before",
+        "return_code": 0,
+        "services": [
+          {
+            "name": "g1_arm_example",
+            "status_raw": 1,
+            "protect_raw": 0
+          }
+        ]
+      }
+    ]
+  },
+  "restore": {
+    "returncode": 0,
+    "stdout": "{\"event\":\"api_version\",\"client\":\"1.0.0.2\",\"server\":\"1.0.0.2\"}\n{\"event\":\"service_list\",\"phase\":\"before\",\"return_code\":0,\"services\":[{\"name\":\"g1_arm_example\",\"status_raw\":1,\"protect_raw\":0}]}\n{\"event\":\"mode_before_switch\",\"id_return_code\":0,\"mode_return_code\":0,\"fsm_id\":501,\"fsm_mode\":0}\n{\"event\":\"restore_guard\",\"error\":\"\"}\n{\"event\":\"service_restore\",\"name\":\"g1_arm_example\",\"switch\":1,\"return_code\":0,\"status_raw\":0}\n{\"event\":\"service_list\",\"phase\":\"after\",\"return_code\":0,\"services\":[{\"name\":\"g1_arm_example\",\"status_raw\":0,\"protect_raw\":0}]}\n{\"marker\":\"G1_BUILTIN_ARM_RESTORE_VERIFIED\",\"status_raw\":0,\"switch_calls\":1,\"motion_commands_sent\":0}\n",
+    "stderr": "",
+    "events": [
+      {
+        "event": "api_version",
+        "client": "1.0.0.2",
+        "server": "1.0.0.2"
+      },
+      {
+        "event": "service_list",
+        "phase": "before",
+        "return_code": 0,
+        "services": [
+          {
+            "name": "g1_arm_example",
+            "status_raw": 1,
+            "protect_raw": 0
+          }
+        ]
+      },
+      {
+        "event": "mode_before_switch",
+        "id_return_code": 0,
+        "mode_return_code": 0,
+        "fsm_id": 501,
+        "fsm_mode": 0
+      },
+      {
+        "event": "restore_guard",
+        "error": ""
+      },
+      {
+        "event": "service_restore",
+        "name": "g1_arm_example",
+        "switch": 1,
+        "return_code": 0,
+        "status_raw": 0
+      },
+      {
+        "event": "service_list",
+        "phase": "after",
+        "return_code": 0,
+        "services": [
+          {
+            "name": "g1_arm_example",
+            "status_raw": 0,
+            "protect_raw": 0
+          }
+        ]
+      },
+      {
+        "marker": "G1_BUILTIN_ARM_RESTORE_VERIFIED",
+        "status_raw": 0,
+        "switch_calls": 1,
+        "motion_commands_sent": 0
+      }
+    ]
+  },
+  "after": {
+    "returncode": 0,
+    "stdout": "{\"event\":\"api_version\",\"client\":\"1.0.0.2\",\"server\":\"1.0.0.2\"}\n{\"event\":\"service_list\",\"phase\":\"before\",\"return_code\":0,\"services\":[{\"name\":\"g1_arm_example\",\"status_raw\":0,\"protect_raw\":0}]}\n",
+    "stderr": "",
+    "events": [
+      {
+        "event": "api_version",
+        "client": "1.0.0.2",
+        "server": "1.0.0.2"
+      },
+      {
+        "event": "service_list",
+        "phase": "before",
+        "return_code": 0,
+        "services": [
+          {
+            "name": "g1_arm_example",
+            "status_raw": 0,
+            "protect_raw": 0
+          }
+        ]
+      }
+    ]
+  },
+  "result": {
+    "verified": true,
+    "changed": true,
+    "switch_calls": 1,
+    "operation": "restore",
+    "message": "原厂上肢服务已恢复并查询确认",
+    "finished_at": 1792057614.869399
+  }
+}

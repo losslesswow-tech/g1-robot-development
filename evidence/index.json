@@ -1,0 +1,1025 @@
+{
+  "recording_sessions": 3,
+  "files": [
+    {
+      "file": "evidence/recordings/20261015-034038/arm7_action.dat",
+      "retention": "complete",
+      "original_bytes": 880,
+      "published_bytes": 873
+    },
+    {
+      "file": "evidence/recordings/20261015-034038/metadata.json",
+      "retention": "complete",
+      "original_bytes": 365,
+      "published_bytes": 354
+    },
+    {
+      "file": "evidence/recordings/20261015-034038/REVIEW.md",
+      "retention": "complete",
+      "original_bytes": 1789,
+      "published_bytes": 1789
+    },
+    {
+      "file": "evidence/recordings/20261015-034038/samples.jsonl",
+      "retention": "complete",
+      "original_bytes": 1484941,
+      "published_bytes": 1369693
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/session.jsonl",
+      "retention": "complete",
+      "original_bytes": 5442,
+      "published_bytes": 4996
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792036821294685900/events.jsonl",
+      "retention": "complete",
+      "original_bytes": 2993,
+      "published_bytes": 2716
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792036821294685900/transport-stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792036821294685900/transport.jsonl",
+      "retention": "first_32_and_last_32_records",
+      "original_bytes": 17592961,
+      "published_bytes": 64286
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792037485616889600/events.jsonl",
+      "retention": "complete",
+      "original_bytes": 5657,
+      "published_bytes": 5114
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792037485616889600/transport-stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792037485616889600/transport.jsonl",
+      "retention": "first_32_and_last_32_records",
+      "original_bytes": 110725010,
+      "published_bytes": 64240
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792052559714229600/events.jsonl",
+      "retention": "complete",
+      "original_bytes": 847,
+      "published_bytes": 768
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792052559714229600/transport-stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792052559714229600/transport.jsonl",
+      "retention": "first_32_and_last_32_records",
+      "original_bytes": 3257337,
+      "published_bytes": 104715
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792052655771762000/events.jsonl",
+      "retention": "complete",
+      "original_bytes": 848,
+      "published_bytes": 769
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792052655771762000/transport-stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792052655771762000/transport.jsonl",
+      "retention": "first_32_and_last_32_records",
+      "original_bytes": 35104799,
+      "published_bytes": 102606
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792053047763798400/events.jsonl",
+      "retention": "complete",
+      "original_bytes": 848,
+      "published_bytes": 769
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792053047763798400/transport-stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792053047763798400/transport.jsonl",
+      "retention": "first_32_and_last_32_records",
+      "original_bytes": 3083388,
+      "published_bytes": 104888
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792053088332949300/events.jsonl",
+      "retention": "complete",
+      "original_bytes": 848,
+      "published_bytes": 769
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792053088332949300/transport-stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792053088332949300/transport.jsonl",
+      "retention": "first_32_and_last_32_records",
+      "original_bytes": 9144679,
+      "published_bytes": 103423
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792053191247657600/events.jsonl",
+      "retention": "complete",
+      "original_bytes": 848,
+      "published_bytes": 769
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792053191247657600/transport-stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792053191247657600/transport.jsonl",
+      "retention": "first_32_and_last_32_records",
+      "original_bytes": 76251697,
+      "published_bytes": 104620
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792054046680877600/events.jsonl",
+      "retention": "complete",
+      "original_bytes": 1057,
+      "published_bytes": 973
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792054046680877600/transport-stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792054046680877600/transport.jsonl",
+      "retention": "first_32_and_last_32_records",
+      "original_bytes": 70411886,
+      "published_bytes": 102887
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792055278472944900/events.jsonl",
+      "retention": "complete",
+      "original_bytes": 3605,
+      "published_bytes": 3274
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792055278472944900/transport-stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792055278472944900/transport.jsonl",
+      "retention": "complete",
+      "original_bytes": 1508715,
+      "published_bytes": 1368488
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792056876628026700/events.jsonl",
+      "retention": "complete",
+      "original_bytes": 3644,
+      "published_bytes": 3288
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792056876628026700/transport-stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792056876628026700/transport.jsonl",
+      "retention": "first_32_and_last_32_records",
+      "original_bytes": 20123712,
+      "published_bytes": 64604
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792057108457620500/events.jsonl",
+      "retention": "complete",
+      "original_bytes": 4102,
+      "published_bytes": 3702
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792057108457620500/transport-stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/stage-playback/1792057108457620500/transport.jsonl",
+      "retention": "first_32_and_last_32_records",
+      "original_bytes": 3240980,
+      "published_bytes": 64723
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/transport-stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/playback/20261015-034038/transport.jsonl",
+      "retention": "first_32_and_last_32_records",
+      "original_bytes": 28380497,
+      "published_bytes": 64299
+    },
+    {
+      "file": "evidence/recordings/20261015-034038/waypoints.json",
+      "retention": "complete",
+      "original_bytes": 3723,
+      "published_bytes": 3528
+    },
+    {
+      "file": "evidence/recordings/20261015-085534-d9317c40/arm7_action.dat",
+      "retention": "complete",
+      "original_bytes": 7,
+      "published_bytes": 5
+    },
+    {
+      "file": "evidence/recordings/20261015-085534-d9317c40/metadata.json",
+      "retention": "complete",
+      "original_bytes": 742,
+      "published_bytes": 692
+    },
+    {
+      "file": "evidence/recordings/20261015-085534-d9317c40/samples.jsonl",
+      "retention": "complete",
+      "original_bytes": 495952,
+      "published_bytes": 458302
+    },
+    {
+      "file": "evidence/recordings/20261015-085534-d9317c40/waypoints.json",
+      "retention": "complete",
+      "original_bytes": 2,
+      "published_bytes": 3
+    },
+    {
+      "file": "evidence/recordings/20261015-085905-6100ccb8/arm7_action.dat",
+      "retention": "complete",
+      "original_bytes": 710,
+      "published_bytes": 704
+    },
+    {
+      "file": "evidence/recordings/20261015-085905-6100ccb8/metadata.json",
+      "retention": "complete",
+      "original_bytes": 741,
+      "published_bytes": 691
+    },
+    {
+      "file": "evidence/recordings/20261015-085905-6100ccb8/samples.jsonl",
+      "retention": "complete",
+      "original_bytes": 1971493,
+      "published_bytes": 1820193
+    },
+    {
+      "file": "evidence/logs/playback/20261015-085905-6100ccb8/stage-playback/1792054831541169000/events.jsonl",
+      "retention": "complete",
+      "original_bytes": 3764,
+      "published_bytes": 3427
+    },
+    {
+      "file": "evidence/logs/playback/20261015-085905-6100ccb8/stage-playback/1792054831541169000/transport-stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/playback/20261015-085905-6100ccb8/stage-playback/1792054831541169000/transport.jsonl",
+      "retention": "first_32_and_last_32_records",
+      "original_bytes": 4149150,
+      "published_bytes": 64932
+    },
+    {
+      "file": "evidence/logs/playback/20261015-085905-6100ccb8/stage-playback/1792054937696718400/events.jsonl",
+      "retention": "complete",
+      "original_bytes": 3784,
+      "published_bytes": 3447
+    },
+    {
+      "file": "evidence/logs/playback/20261015-085905-6100ccb8/stage-playback/1792054937696718400/transport-stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/playback/20261015-085905-6100ccb8/stage-playback/1792054937696718400/transport.jsonl",
+      "retention": "first_32_and_last_32_records",
+      "original_bytes": 4248509,
+      "published_bytes": 64867
+    },
+    {
+      "file": "evidence/logs/playback/20261015-085905-6100ccb8/stage-playback/1792057579186816500/events.jsonl",
+      "retention": "complete",
+      "original_bytes": 4094,
+      "published_bytes": 3694
+    },
+    {
+      "file": "evidence/logs/playback/20261015-085905-6100ccb8/stage-playback/1792057579186816500/transport-stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/playback/20261015-085905-6100ccb8/stage-playback/1792057579186816500/transport.jsonl",
+      "retention": "first_32_and_last_32_records",
+      "original_bytes": 3010337,
+      "published_bytes": 64622
+    },
+    {
+      "file": "evidence/logs/playback/20261015-085905-6100ccb8/stage-playback/1792058806643114000/events.jsonl",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/playback/20261015-085905-6100ccb8/stage-playback/1792058806643114000/transport.jsonl",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/playback/20261015-085905-6100ccb8/stage-playback/1792059385107543900/events.jsonl",
+      "retention": "complete",
+      "original_bytes": 1446,
+      "published_bytes": 1338
+    },
+    {
+      "file": "evidence/logs/playback/20261015-085905-6100ccb8/stage-playback/1792059385107543900/transport.jsonl",
+      "retention": "complete",
+      "original_bytes": 623,
+      "published_bytes": 621
+    },
+    {
+      "file": "evidence/logs/playback/20261015-085905-6100ccb8/stage-playback/1792139168475022000/events.jsonl",
+      "retention": "complete",
+      "original_bytes": 1446,
+      "published_bytes": 1338
+    },
+    {
+      "file": "evidence/logs/playback/20261015-085905-6100ccb8/stage-playback/1792139168475022000/transport-stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/playback/20261015-085905-6100ccb8/stage-playback/1792139168475022000/transport.jsonl",
+      "retention": "first_32_and_last_32_records",
+      "original_bytes": 10123863,
+      "published_bytes": 103136
+    },
+    {
+      "file": "evidence/logs/playback/20261015-085905-6100ccb8/stage-playback/1792139282163837600/events.jsonl",
+      "retention": "complete",
+      "original_bytes": 4329,
+      "published_bytes": 3933
+    },
+    {
+      "file": "evidence/logs/playback/20261015-085905-6100ccb8/stage-playback/1792139282163837600/transport-stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/playback/20261015-085905-6100ccb8/stage-playback/1792139282163837600/transport.jsonl",
+      "retention": "first_32_and_last_32_records",
+      "original_bytes": 2297498,
+      "published_bytes": 64945
+    },
+    {
+      "file": "evidence/logs/playback/20261015-085905-6100ccb8/stage-playback/1792371562419598300/events.jsonl",
+      "retention": "complete",
+      "original_bytes": 1842,
+      "published_bytes": 1715
+    },
+    {
+      "file": "evidence/logs/playback/20261015-085905-6100ccb8/stage-playback/1792371562419598300/transport.jsonl",
+      "retention": "complete",
+      "original_bytes": 623,
+      "published_bytes": 621
+    },
+    {
+      "file": "evidence/recordings/20261015-085905-6100ccb8/waypoints.json",
+      "retention": "complete",
+      "original_bytes": 3179,
+      "published_bytes": 3019
+    },
+    {
+      "file": "evidence/logs/teaching/service-control/1792054215636699400.json",
+      "retention": "complete",
+      "original_bytes": 27087,
+      "published_bytes": 26334
+    },
+    {
+      "file": "evidence/logs/teaching/service-control/1792057103319665100.json",
+      "retention": "complete",
+      "original_bytes": 4084,
+      "published_bytes": 3958
+    },
+    {
+      "file": "evidence/logs/teaching/service-control/1792057125262236000.json",
+      "retention": "complete",
+      "original_bytes": 11807,
+      "published_bytes": 11457
+    },
+    {
+      "file": "evidence/logs/teaching/service-control/1792057147716348500.json",
+      "retention": "complete",
+      "original_bytes": 4083,
+      "published_bytes": 3957
+    },
+    {
+      "file": "evidence/logs/teaching/service-control/1792057590415465200.json",
+      "retention": "complete",
+      "original_bytes": 9323,
+      "published_bytes": 9045
+    },
+    {
+      "file": "evidence/logs/teaching/service-control/1792057614869948000.json",
+      "retention": "complete",
+      "original_bytes": 4083,
+      "published_bytes": 3957
+    },
+    {
+      "file": "evidence/logs/teaching/service-control/1792139294142413000.json",
+      "retention": "complete",
+      "original_bytes": 8082,
+      "published_bytes": 7840
+    },
+    {
+      "file": "evidence/logs/teaching/service-control/1792139310776791300.json",
+      "retention": "complete",
+      "original_bytes": 4083,
+      "published_bytes": 3957
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792052559646467000/session.jsonl",
+      "retention": "complete",
+      "original_bytes": 584,
+      "published_bytes": 549
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792052559646467000/transport-stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792052559646467000/transport.jsonl",
+      "retention": "first_32_and_last_32_records",
+      "original_bytes": 3220360,
+      "published_bytes": 104351
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792052655699970900/session.jsonl",
+      "retention": "complete",
+      "original_bytes": 584,
+      "published_bytes": 549
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792052655699970900/transport-stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792052655699970900/transport.jsonl",
+      "retention": "first_32_and_last_32_records",
+      "original_bytes": 34957555,
+      "published_bytes": 102951
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792053045966805700/session.jsonl",
+      "retention": "complete",
+      "original_bytes": 584,
+      "published_bytes": 549
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792053045966805700/transport-stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792053045966805700/transport.jsonl",
+      "retention": "first_32_and_last_32_records",
+      "original_bytes": 2972367,
+      "published_bytes": 104722
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792053088261204700/session.jsonl",
+      "retention": "complete",
+      "original_bytes": 584,
+      "published_bytes": 549
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792053088261204700/transport-stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792053088261204700/transport.jsonl",
+      "retention": "first_32_and_last_32_records",
+      "original_bytes": 9010728,
+      "published_bytes": 103347
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792053189961048600/session.jsonl",
+      "retention": "complete",
+      "original_bytes": 582,
+      "published_bytes": 547
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792053189961048600/transport-stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792053189961048600/transport.jsonl",
+      "retention": "first_32_and_last_32_records",
+      "original_bytes": 76276603,
+      "published_bytes": 104622
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792054046602632900/session.jsonl",
+      "retention": "complete",
+      "original_bytes": 3264,
+      "published_bytes": 2967
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792054046602632900/transport-stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792054046602632900/transport.jsonl",
+      "retention": "first_32_and_last_32_records",
+      "original_bytes": 45293597,
+      "published_bytes": 64651
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792054714773288600/session.jsonl",
+      "retention": "complete",
+      "original_bytes": 5627,
+      "published_bytes": 5134
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792054714773288600/transport-stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792054714773288600/transport.jsonl",
+      "retention": "first_32_and_last_32_records",
+      "original_bytes": 9271063,
+      "published_bytes": 64653
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792055019121143300/session.jsonl",
+      "retention": "complete",
+      "original_bytes": 792,
+      "published_bytes": 752
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792055019121143300/transport-stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792055019121143300/transport.jsonl",
+      "retention": "first_32_and_last_32_records",
+      "original_bytes": 160566691,
+      "published_bytes": 104750
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792056876569824800/session.jsonl",
+      "retention": "complete",
+      "original_bytes": 867,
+      "published_bytes": 823
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792056876569824800/transport-stderr.log",
+      "retention": "complete",
+      "original_bytes": 50,
+      "published_bytes": 49
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792056876569824800/transport.jsonl",
+      "retention": "first_32_and_last_32_records",
+      "original_bytes": 112687088,
+      "published_bytes": 104659
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792058806438251800/session.jsonl",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792058806438251800/transport.jsonl",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792059384923768000/session.jsonl",
+      "retention": "complete",
+      "original_bytes": 868,
+      "published_bytes": 824
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792059384923768000/transport.jsonl",
+      "retention": "complete",
+      "original_bytes": 623,
+      "published_bytes": 621
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792139168051721900/session.jsonl",
+      "retention": "complete",
+      "original_bytes": 868,
+      "published_bytes": 824
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792139168051721900/transport-stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792139168051721900/transport.jsonl",
+      "retention": "first_32_and_last_32_records",
+      "original_bytes": 325129821,
+      "published_bytes": 103547
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792371562216576400/session.jsonl",
+      "retention": "complete",
+      "original_bytes": 1264,
+      "published_bytes": 1201
+    },
+    {
+      "file": "evidence/logs/teaching/teaching/1792371562216576400/transport.jsonl",
+      "retention": "complete",
+      "original_bytes": 623,
+      "published_bytes": 621
+    },
+    {
+      "file": "evidence/logs/development/arm-debug-20261014/server-fixed.err",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/development/arm-debug-20261014/server-fixed.log",
+      "retention": "complete",
+      "original_bytes": 107,
+      "published_bytes": 106
+    },
+    {
+      "file": "evidence/logs/development/arm-debug-20261014/server-incident-readonly.err",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/development/arm-debug-20261014/server-incident-readonly.log",
+      "retention": "complete",
+      "original_bytes": 108,
+      "published_bytes": 107
+    },
+    {
+      "file": "evidence/logs/development/arm-debug-20261014/server-leg-monitor.err",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/development/arm-debug-20261014/server-leg-monitor.log",
+      "retention": "complete",
+      "original_bytes": 107,
+      "published_bytes": 106
+    },
+    {
+      "file": "evidence/logs/development/arm-debug-20261014/server-limits20-50.err",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/development/arm-debug-20261014/server-limits20-50.log",
+      "retention": "complete",
+      "original_bytes": 107,
+      "published_bytes": 106
+    },
+    {
+      "file": "evidence/logs/development/arm-debug-20261014/server-mode-fix.err",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/development/arm-debug-20261014/server-mode-fix.log",
+      "retention": "complete",
+      "original_bytes": 107,
+      "published_bytes": 106
+    },
+    {
+      "file": "evidence/logs/development/arm-debug-20261014/server.err",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/development/arm-debug-20261014/server.log",
+      "retention": "complete",
+      "original_bytes": 107,
+      "published_bytes": 106
+    },
+    {
+      "file": "evidence/logs/development/arm-debug-20261014/simulation-server.err",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/development/arm-debug-20261014/simulation-server.log",
+      "retention": "complete",
+      "original_bytes": 114,
+      "published_bytes": 113
+    },
+    {
+      "file": "evidence/logs/development/dreamcontrol-button-20261015/verified/setup.log",
+      "retention": "complete",
+      "original_bytes": 5489,
+      "published_bytes": 5517
+    },
+    {
+      "file": "evidence/logs/development/dreamcontrol-button-20261015/verified/simulation.log",
+      "retention": "complete",
+      "original_bytes": 759,
+      "published_bytes": 767
+    },
+    {
+      "file": "evidence/logs/development/dreamcontrol-button-20261015/verified/torch_direct.log",
+      "retention": "complete",
+      "original_bytes": 2488,
+      "published_bytes": 2488
+    },
+    {
+      "file": "evidence/logs/development/dreamcontrol-button-live-20261015/verified/trials/trial-1792031510084779977/transport-stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/development/dreamcontrol-button-live-20261015/verified/trials/trial-1792032050576150929/transport-stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/development/dreamcontrol-console-20261015/api-tests.log",
+      "retention": "complete",
+      "original_bytes": 1005,
+      "published_bytes": 994
+    },
+    {
+      "file": "evidence/logs/development/dreamcontrol-console-20261015/flow-tests.log",
+      "retention": "complete",
+      "original_bytes": 1470,
+      "published_bytes": 1456
+    },
+    {
+      "file": "evidence/logs/development/dreamcontrol-console-20261015/mock-server-error.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/development/dreamcontrol-console-20261015/mock-server-out.log",
+      "retention": "complete",
+      "original_bytes": 108,
+      "published_bytes": 107
+    },
+    {
+      "file": "evidence/logs/development/dreamcontrol-console-20261015/mujoco-validation-stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/development/dreamcontrol-console-20261015/server-error.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/development/dreamcontrol-console-20261015/server-out.log",
+      "retention": "complete",
+      "original_bytes": 107,
+      "published_bytes": 106
+    },
+    {
+      "file": "evidence/logs/development/dreamcontrol-console-20261015/worker-stderr-1792035188174111600.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/development/dreamcontrol-console-20261015/worker-stderr-1792036032514962400.log",
+      "retention": "complete",
+      "original_bytes": 48,
+      "published_bytes": 47
+    },
+    {
+      "file": "evidence/logs/development/dreamcontrol-z050-20261015/live-verified/trial/transport-stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/development/dreamcontrol-z050-20261015/repeat-02/live-verified/trial/transport-stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/development/g1-arm-teach-play-20261015/continuous-record.stderr.log",
+      "retention": "complete",
+      "original_bytes": 91,
+      "published_bytes": 86
+    },
+    {
+      "file": "evidence/logs/development/g1-arm-teach-play-20261015/continuous-record.stdout.log",
+      "retention": "complete",
+      "original_bytes": 89,
+      "published_bytes": 88
+    },
+    {
+      "file": "evidence/logs/development/g1-arm-teach-play-20261015/continuous-replay.stderr.log",
+      "retention": "complete",
+      "original_bytes": 91,
+      "published_bytes": 86
+    },
+    {
+      "file": "evidence/logs/development/g1-arm-teach-play-20261015/continuous-replay.stdout.log",
+      "retention": "complete",
+      "original_bytes": 80,
+      "published_bytes": 79
+    },
+    {
+      "file": "evidence/logs/development/g1-arm-teach-play-20261015/multi-record-console.stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/development/g1-arm-teach-play-20261015/multi-record-console.stdout.log",
+      "retention": "complete",
+      "original_bytes": 89,
+      "published_bytes": 88
+    },
+    {
+      "file": "evidence/logs/development/g1-arm-teach-play-20261015/multi-replay-console.stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/development/g1-arm-teach-play-20261015/multi-replay-console.stdout.log",
+      "retention": "complete",
+      "original_bytes": 79,
+      "published_bytes": 78
+    },
+    {
+      "file": "evidence/logs/development/g1-arm-teach-play-20261015/restore-record.stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/development/g1-arm-teach-play-20261015/restore-record.stdout.log",
+      "retention": "complete",
+      "original_bytes": 88,
+      "published_bytes": 87
+    },
+    {
+      "file": "evidence/logs/development/g1-arm-teach-play-20261015/restore-replay.stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/development/g1-arm-teach-play-20261015/restore-replay.stdout.log",
+      "retention": "complete",
+      "original_bytes": 80,
+      "published_bytes": 79
+    },
+    {
+      "file": "evidence/logs/development/g1-arm-teach-play-20261015/service-button-record.stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/development/g1-arm-teach-play-20261015/service-button-record.stdout.log",
+      "retention": "complete",
+      "original_bytes": 89,
+      "published_bytes": 88
+    },
+    {
+      "file": "evidence/logs/development/g1-arm-teach-play-20261015/service-button-replay.stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/development/g1-arm-teach-play-20261015/service-button-replay.stdout.log",
+      "retention": "complete",
+      "original_bytes": 80,
+      "published_bytes": 79
+    },
+    {
+      "file": "evidence/logs/development/g1-arm-teach-play-20261016/record.stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/development/g1-arm-teach-play-20261016/record.stdout.log",
+      "retention": "complete",
+      "original_bytes": 89,
+      "published_bytes": 88
+    },
+    {
+      "file": "evidence/logs/development/g1-arm-teach-play-20261016/replay.stderr.log",
+      "retention": "complete",
+      "original_bytes": 0,
+      "published_bytes": 0
+    },
+    {
+      "file": "evidence/logs/development/g1-arm-teach-play-20261016/replay.stdout.log",
+      "retention": "complete",
+      "original_bytes": 80,
+      "published_bytes": 79
+    },
+    {
+      "file": "evidence/logs/development/g1-arm-teach-play-20261019/record.stderr.log",
+      "retention": "complete",
+      "original_bytes": 91,
+      "published_bytes": 86
+    },
+    {
+      "file": "evidence/logs/development/g1-arm-teach-play-20261019/record.stdout.log",
+      "retention": "complete",
+      "original_bytes": 89,
+      "published_bytes": 88
+    },
+    {
+      "file": "evidence/logs/development/g1-arm-teach-play-20261019/replay.stderr.log",
+      "retention": "complete",
+      "original_bytes": 91,
+      "published_bytes": 86
+    },
+    {
+      "file": "evidence/logs/development/g1-arm-teach-play-20261019/replay.stdout.log",
+      "retention": "complete",
+      "original_bytes": 80,
+      "published_bytes": 79
+    },
+    {
+      "file": "evidence/logs/development/task-10121959-20261013/history-task-web-20261010.log",
+      "retention": "complete",
+      "original_bytes": 48821,
+      "published_bytes": 48820
+    },
+    {
+      "file": "evidence/logs/development/task-10121959-20261013/rosout.log",
+      "retention": "complete",
+      "original_bytes": 180001,
+      "published_bytes": 180000
+    }
+  ]
+}

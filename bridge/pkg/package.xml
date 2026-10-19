@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>g1_ros1_sdk</name>
+  <version>1.1.0</version>
+  <description>Safe-default Unitree G1 DDS state bridge for ROS1.</description>
+  <maintainer email="developer@example.invalid">DSH</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+</package>
+

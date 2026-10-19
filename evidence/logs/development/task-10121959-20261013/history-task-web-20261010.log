@@ -1,0 +1,650 @@
+[2026-10-13 00:34:11.922] [console] [info] Detection lidars failed, Send to lidar failed.  [device_manager.cpp] [Detection] [447]
+[0m[ INFO] [1791796642.894510838]: [w_nav] GOAL reached 0.03[0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851702.520357324]: Too few input point cloud![0m
+[31m[ERROR] [1791851702.523395461]: Too few input point cloud![0m
+[31m[ERROR] [1791851703.571124061]: Too few input point cloud![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851703.783131334]: Too few input point cloud![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851707.890383321]: Too few input point cloud![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851708.000511145]: Too few input point cloud![0m
+[0m[ INFO] [pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851710.216372957]: Too few input point cloud![0m
+[31m[ERROR] [1791851710.223405324]: Too few input point cloud![0m
+[31m[ERROR] [1791851712.426241625]: Too few input point cloud![0m
+[31m[ERROR] [1791851712.951825939]: Too few input point cloud![0m
+[31m[ERROR] [1791851713.053658029]: Too few input point cloud![0m
+[31m[ERROR] [1791851715.465050786]: Too few input point cloud![0m
+[31m[ERROR] [1791851715.473301807]: Too few input point cloud![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851721.839097906]: No Effective Points![0m
+[31m[ERROR] [1791851721.839115059]: No Effective Points![0m
+[31m[ERROR] [1791851721.839121459]: No Effective Points![0m
+[31m[ERROR] [1791851721.839126858]: No Effective Points![0m
+[31m[ERROR] [1791851721.839131862]: No Effective Points![0m
+[31m[ERROR] [1791851721.839136864]: No Effective Points![0m
+[31m[ERROR] [1791851721.839142146]: No Effective Points![0m
+[31m[ERROR] [1791851721.839147269]: No Effective Points![0m
+[31m[ERROR] [1791851721.839152001]: No Effective Points![0m
+[31m[ERROR] [1791851721.863296531]: No Effective Points![0m
+[31m[ERROR] [1791851721.863315311]: No Effective Points![0m
+[31m[ERROR] [1791851721.863322745]: No Effective Points![0m
+[31m[ERROR] [1791851721.863329402]: No Effective Points![0m
+[31m[ERROR] [1791851721.863335839]: No Effective Points![0m
+[31m[ERROR] [1791851721.863342306]: No Effective Points![0m
+[31m[ERROR] [1791851721.863348729]: No Effective Points![0m
+[31m[ERROR] [1791851721.863355070]: No Effective Points![0m
+[31m[ERROR] [1791851721.863361317]: No Effective Points![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851721.943079879]: No Effective Points![0m
+[31m[ERROR] [1791851721.943091958]: No Effective Points![0m
+[31m[ERROR] [1791851721.943100116]: No Effective Points![0m
+[31m[ERROR] [1791851721.943107813]: No Effective Points![0m
+[31m[ERROR] [1791851721.943115930]: No Effective Points![0m
+[31m[ERROR] [1791851721.943123438]: No Effective Points![0m
+[31m[ERROR] [1791851721.943131386]: No Effective Points![0m
+[31m[ERROR] [1791851721.943138765]: No Effective Points![0m
+[31m[ERROR] [1791851721.943145803]: No Effective Points![0m
+[31m[ERROR] [1791851721.968899582]: No Effective Points![0m
+[31m[ERROR] [1791851721.968915312]: No Effective Points![0m
+[31m[ERROR] [1791851721.968923631]: No Effective Points![0m
+[31m[ERROR] [1791851721.968930630]: No Effective Points![0m
+[31m[ERROR] [1791851721.968937672]: No Effective Points![0m
+[31m[ERROR] [1791851721.968944447]: No Effective Points![0m
+[31m[ERROR] [1791851721.968950758]: No Effective Points![0m
+[31m[ERROR] [1791851721.968957660]: No Effective Points![0m
+[31m[ERROR] [1791851721.968964305]: No Effective Points![0m
+[31m[ERROR] [1791851722.043111393]: No Effective Points![0m
+[31m[ERROR] [1791851722.043128929]: No Effective Points![0m
+[31m[ERROR] [1791851722.043136971]: No Effective Points![0m
+[31m[ERROR] [1791851722.043144326]: No Effective Points![0m
+[31m[ERROR] [1791851722.043151242]: No Effective Points![0m
+[31m[ERROR] [1791851722.043158345]: No Effective Points![0m
+[31m[ERROR] [1791851722.043165255]: No Effective Points![0m
+[31m[ERROR] [1791851722.043172114]: No Effective Points![0m
+[31m[ERROR] [1791851722.043179060]: No Effective Points![0m
+[31m[ERROR] [1791851722.073415776]: No Effective Points![0m
+[31m[ERROR] [1791851722.073430735]: No Effective Points![0m
+[31m[ERROR] [1791851722.073437899]: No Effective Points![0m
+[31m[ERROR] [1791851722.073446619]: No Effective Points![0m
+[31m[ERROR] [1791851722.073452626]: No Effective Points![0m
+[31m[ERROR] [1791851722.073458547]: No Effective Points![0m
+[31m[ERROR] [1791851722.073464338]: No Effective Points![0m
+[31m[ERROR] [1791851722.073470051]: No Effective Points![0m
+[31m[ERROR] [1791851722.073475939]: No Effective Points![0m
+[31m[ERROR] [1791851722.148913066]: No Effective Points![0m
+[31m[ERROR] [1791851722.148928121]: No Effective Points![0m
+[31m[ERROR] [1791851722.148935054]: No Effective Points![0m
+[31m[ERROR] [1791851722.148941328]: No Effective Points![0m
+[31m[ERROR] [1791851722.148946989]: No Effective Points![0m
+[31m[ERROR] [1791851722.148954876]: No Effective Points![0m
+[31m[ERROR] [1791851722.148960699]: No Effective Points![0m
+[31m[ERROR] [1791851722.148966187]: No Effective Points![0m
+[31m[ERROR] [1791851722.148972055]: No Effective Points![0m
+[31m[ERROR] [1791851722.178826073]: No Effective Points![0m
+[31m[ERROR] [1791851722.178841298]: No Effective Points![0m
+[31m[ERROR] [1791851722.178848183]: No Effective Points![0m
+[31m[ERROR] [1791851722.178854554]: No Effective Points![0m
+[31m[ERROR] [1791851722.178860528]: No Effective Points![0m
+[31m[ERROR] [1791851722.178866429]: No Effective Points![0m
+[31m[ERROR] [1791851722.178871764]: No Effective Points![0m
+[31m[ERROR] [1791851722.178888437]: No Effective Points![0m
+[31m[ERROR] [1791851722.178895111]: No Effective Points![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851722.248942718]: No Effective Points![0m
+[31m[ERROR] [1791851722.248955481]: No Effective Points![0m
+[31m[ERROR] [1791851722.248964043]: No Effective Points![0m
+[31m[ERROR] [1791851722.248972135]: No Effective Points![0m
+[31m[ERROR] [1791851722.248979915]: No Effective Points![0m
+[31m[ERROR] [1791851722.248987689]: No Effective Points![0m
+[31m[ERROR] [1791851722.248995395]: No Effective Points![0m
+[31m[ERROR] [1791851722.249002942]: No Effective Points![0m
+[31m[ERROR] [1791851722.249010812]: No Effective Points![0m
+[0m[ INFO] [1791851722.251651728]: x_slam: in_num: 45, local_vox_num: 29, takes 2.01ms, 0.80ms[31m[ERROR] [1791851722.283027804]: No Effective Points![0m
+[31m[ERROR] [1791851722.283042878]: No Effective Points![0m
+[31m[ERROR] [1791851722.283050203]: No Effective Points![0m
+[31m[ERROR] [1791851722.283056869]: No Effective Points![0m
+[31m[ERROR] [1791851722.283063696]: No Effective Points![0m
+[31m[ERROR] [1791851722.283070241]: No Effective Points![0m
+[31m[ERROR] [1791851722.283076815]: No Effective Points![0m
+[31m[ERROR] [1791851722.283083833]: No Effective Points![0m
+[31m[ERROR] [1791851722.283090262]: No Effective Points![0m
+[31m[ERROR] [1791851722.353244817]: No Effective Points![0m
+[31m[ERROR] [1791851722.353261520]: No Effective Points![0m
+[31m[ERROR] [1791851722.353269621]: No Effective Points![0m
+[31m[ERROR] [1791851722.353276958]: No Effective Points![0m
+[31m[ERROR] [1791851722.353284447]: No Effective Points![0m
+[31m[ERROR] [1791851722.353291483]: No Effective Points![0m
+[31m[ERROR] [1791851722.353298570]: No Effective Points![0m
+[31m[ERROR] [1791851722.353305406]: No Effective Points![0m
+[31m[ERROR] [1791851722.353312303]: No Effective Points![0m
+[31m[ERROR] [1791851722.388801275]: No Effective Points![0m
+[31m[ERROR] [1791851722.388820002]: No Effective Points![0m
+[31m[ERROR] [1791851722.388828119]: No Effective Points![0m
+[31m[ERROR] [1791851722.388835998]: No Effective Points![0m
+[31m[ERROR] [1791851722.388843074]: No Effective Points![0m
+[31m[ERROR] [1791851722.388850103]: No Effective Points![0m
+[31m[ERROR] [1791851722.388857183]: No Effective Points![0m
+[31m[ERROR] [1791851722.388864261]: No Effective Points![0m
+[31m[ERROR] [1791851722.388870994]: No Effective Points![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851722.458945525]: No Effective Points![0m
+[31m[ERROR] [1791851722.458959616]: No Effective Points![0m
+[31m[ERROR] [1791851722.458966419]: No Effective Points![0m
+[31m[ERROR] [1791851722.458972246]: No Effective Points![0m
+[31m[ERROR] [1791851722.458978218]: No Effective Points![0m
+[31m[ERROR] [1791851722.458983698]: No Effective Points![0m
+[31m[ERROR] [1791851722.458988749]: No Effective Points![0m
+[31m[ERROR] [1791851722.458993916]: No Effective Points![0m
+[31m[ERROR] [1791851722.458999085]: No Effective Points![0m
+[31m[ERROR] [1791851722.488764289]: No Effective Points![0m
+[31m[ERROR] [1791851722.488780863]: No Effective Points![0m
+[31m[ERROR] [1791851722.488787554]: No Effective Points![0m
+[31m[ERROR] [1791851722.488793583]: No Effective Points![0m
+[31m[ERROR] [1791851722.488799835]: No Effective Points![0m
+[31m[ERROR] [1791851722.488805496]: No Effective Points![0m
+[31m[ERROR] [1791851722.488811513]: No Effective Points![0m
+[31m[ERROR] [1791851722.488817875]: No Effective Points![0m
+[31m[ERROR] [1791851722.488823083]: No Effective Points![0m
+[31m[ERROR] [1791851722.558810796]: No Effective Points![0m
+[31m[ERROR] [1791851722.558826606]: No Effective Points![0m
+[31m[ERROR] [1791851722.558833719]: No Effective Points![0m
+[31m[ERROR] [1791851722.558839880]: No Effective Points![0m
+[31m[ERROR] [1791851722.558845243]: No Effective Points![0m
+[31m[ERROR] [1791851722.558856381]: No Effective Points![0m
+[31m[ERROR] [1791851722.558862547]: No Effective Points![0m
+[31m[ERROR] [1791851722.558868243]: No Effective Points![0m
+[31m[ERROR] [1791851722.558873448]: No Effective Points![0m
+[31m[ERROR] [1791851722.593058609]: No Effective Points![0m
+[31m[ERROR] [1791851722.593072601]: No Effective Points![0m
+[31m[ERROR] [1791851722.593078686]: No Effective Points![0m
+[31m[ERROR] [1791851722.593084027]: No Effective Points![0m
+[31m[ERROR] [1791851722.593089481]: No Effective Points![0m
+[31m[ERROR] [1791851722.593094313]: No Effective Points![0m
+[31m[ERROR] [1791851722.593099448]: No Effective Points![0m
+[31m[ERROR] [1791851722.593103978]: No Effective Points![0m
+[31m[ERROR] [1791851722.593108791]: No Effective Points![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851722.662863928]: No Effective Points![0m
+[31m[ERROR] [1791851722.662875730]: No Effective Points![0m
+[31m[ERROR] [1791851722.662883601]: No Effective Points![0m
+[31m[ERROR] [1791851722.662890772]: No Effective Points![0m
+[31m[ERROR] [1791851722.662898807]: No Effective Points![0m
+[31m[ERROR] [1791851722.662905730]: No Effective Points![0m
+[31m[ERROR] [1791851722.662912717]: No Effective Points![0m
+[31m[ERROR] [1791851722.662919628]: No Effective Points![0m
+[31m[ERROR] [1791851722.662926741]: No Effective Points![0m
+[31m[ERROR] [1791851722.698772048]: No Effective Points![0m
+[31m[ERROR] [1791851722.698785841]: No Effective Points![0m
+[31m[ERROR] [1791851722.698791946]: No Effective Points![0m
+[31m[ERROR] [1791851722.698797399]: No Effective Points![0m
+[31m[ERROR] [1791851722.698802697]: No Effective Points![0m
+[31m[ERROR] [1791851722.698807732]: No Effective Points![0m
+[31m[ERROR] [1791851722.698812871]: No Effective Points![0m
+[31m[ERROR] [1791851722.698817785]: No Effective Points![0m
+[31m[ERROR] [1791851722.698823053]: No Effective Points![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851722.768656506]: No Effective Points![0m
+[31m[ERROR] [1791851722.768668911]: No Effective Points![0m
+[31m[ERROR] [1791851722.768677388]: No Effective Points![0m
+[31m[ERROR] [1791851722.768685752]: No Effective Points![0m
+[31m[ERROR] [1791851722.768693864]: No Effective Points![0m
+[31m[ERROR] [1791851722.768701577]: No Effective Points![0m
+[31m[ERROR] [1791851722.768709232]: No Effective Points![0m
+[31m[ERROR] [1791851722.768717036]: No Effective Points![0m
+[31m[ERROR] [1791851722.768724763]: No Effective Points![0m
+[31m[ERROR] [1791851722.803174496]: No Effective Points![0m
+[31m[ERROR] [1791851722.803188766]: No Effective Points![0m
+[31m[ERROR] [1791851722.803195970]: No Effective Points![0m
+[31m[ERROR] [1791851722.803202642]: No Effective Points![0m
+[31m[ERROR] [1791851722.803209106]: No Effective Points![0m
+[31m[ERROR] [1791851722.803215347]: No Effective Points![0m
+[31m[ERROR] [1791851722.803221559]: No Effective Points![0m
+[31m[ERROR] [1791851722.803228286]: No Effective Points![0m
+[31m[ERROR] [1791851722.803234429]: No Effective Points![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851722.873214435]: No Effective Points![0m
+[31m[ERROR] [1791851722.873224538]: No Effective Points![0m
+[31m[ERROR] [1791851722.873231055]: No Effective Points![0m
+[31m[ERROR] [1791851722.873237044]: No Effective Points![0m
+[31m[ERROR] [1791851722.873242574]: No Effective Points![0m
+[31m[ERROR] [1791851722.873248736]: No Effective Points![0m
+[31m[ERROR] [1791851722.873254247]: No Effective Points![0m
+[31m[ERROR] [1791851722.873259721]: No Effective Points![0m
+[31m[ERROR] [1791851722.873265389]: No Effective Points![0m
+[31m[ERROR] [1791851722.908864688]: No Effective Points![0m
+[31m[ERROR] [1791851722.908881394]: No Effective Points![0m
+[31m[ERROR] [1791851722.908890441]: No Effective Points![0m
+[31m[ERROR] [1791851722.908902992]: No Effective Points![0m
+[31m[ERROR] [1791851722.908911088]: No Effective Points![0m
+[31m[ERROR] [1791851722.908918901]: No Effective Points![0m
+[31m[ERROR] [1791851722.908926498]: No Effective Points![0m
+[31m[ERROR] [1791851722.908933995]: No Effective Points![0m
+[31m[ERROR] [1791851722.908941636]: No Effective Points![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851722.978686564]: No Effective Points![0m
+[31m[ERROR] [1791851722.978697714]: No Effective Points![0m
+[31m[ERROR] [1791851722.978705187]: No Effective Points![0m
+[31m[ERROR] [1791851722.978712176]: No Effective Points![0m
+[31m[ERROR] [1791851722.978719211]: No Effective Points![0m
+[31m[ERROR] [1791851722.978725641]: No Effective Points![0m
+[31m[ERROR] [1791851722.978737847]: No Effective Points![0m
+[31m[ERROR] [1791851722.978744138]: No Effective Points![0m
+[31m[ERROR] [1791851722.978750438]: No Effective Points![0m
+[31m[ERROR] [1791851723.013037207]: No Effective Points![0m
+[31m[ERROR] [1791851723.013054407]: No Effective Points![0m
+[31m[ERROR] [1791851723.013063514]: No Effective Points![0m
+[31m[ERROR] [1791851723.013072055]: No Effective Points![0m
+[31m[ERROR] [1791851723.013080084]: No Effective Points![0m
+[31m[ERROR] [1791851723.013088049]: No Effective Points![0m
+[31m[ERROR] [1791851723.013095920]: No Effective Points![0m
+[31m[ERROR] [1791851723.013103794]: No Effective Points![0m
+[31m[ERROR] [1791851723.013111892]: No Effective Points![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851723.088942945]: No Effective Points![0m
+[31m[ERROR] [1791851723.088954032]: No Effective Points![0m
+[31m[ERROR] [1791851723.088961024]: No Effective Points![0m
+[31m[ERROR] [1791851723.088967686]: No Effective Points![0m
+[31m[ERROR] [1791851723.088973800]: No Effective Points![0m
+[31m[ERROR] [1791851723.088979902]: No Effective Points![0m
+[31m[ERROR] [1791851723.088986084]: No Effective Points![0m
+[31m[ERROR] [1791851723.088992066]: No Effective Points![0m
+[31m[ERROR] [1791851723.088998221]: No Effective Points![0m
+[31m[ERROR] [1791851723.118843471]: No Effective Points![0m
+[31m[ERROR] [1791851723.118860189]: No Effective Points![0m
+[31m[ERROR] [1791851723.118868170]: No Effective Points![0m
+[31m[ERROR] [1791851723.118875840]: No Effective Points![0m
+[31m[ERROR] [1791851723.118888864]: No Effective Points![0m
+[31m[ERROR] [1791851723.118896177]: No Effective Points![0m
+[31m[ERROR] [1791851723.118903343]: No Effective Points![0m
+[31m[ERROR] [1791851723.118911260]: No Effective Points![0m
+[31m[ERROR] [1791851723.118918260]: No Effective Points![0m
+[31m[ERROR] [1791851723.192848159]: No Effective Points![0m
+[31m[ERROR] [1791851723.192863675]: No Effective Points![0m
+[31m[ERROR] [1791851723.192870196]: No Effective Points![0m
+[31m[ERROR] [1791851723.192875756]: No Effective Points![0m
+[31m[ERROR] [1791851723.192881237]: No Effective Points![0m
+[31m[ERROR] [1791851723.192886273]: No Effective Points![0m
+[31m[ERROR] [1791851723.192891795]: No Effective Points![0m
+[31m[ERROR] [1791851723.192897177]: No Effective Points![0m
+[31m[ERROR] [1791851723.192902421]: No Effective Points![0m
+[31m[ERROR] [1791851723.228827040]: No Effective Points![0m
+[31m[ERROR] [1791851723.228849718]: No Effective Points![0m
+[31m[ERROR] [1791851723.228858827]: No Effective Points![0m
+[31m[ERROR] [1791851723.228867334]: No Effective Points![0m
+[31m[ERROR] [1791851723.228874654]: No Effective Points![0m
+[31m[ERROR] [1791851723.228881825]: No Effective Points![0m
+[31m[ERROR] [1791851723.228889272]: No Effective Points![0m
+[31m[ERROR] [1791851723.228915637]: No Effective Points![0m
+[31m[ERROR] [1791851723.228930371]: No Effective Points![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851723.293115323]: No Effective Points![0m
+[31m[ERROR] [1791851723.293128075]: No Effective Points![0m
+[31m[ERROR] [1791851723.293145405]: No Effective Points![0m
+[31m[ERROR] [1791851723.293159301]: No Effective Points![0m
+[31m[ERROR] [1791851723.293170757]: No Effective Points![0m
+[31m[ERROR] [1791851723.293183621]: No Effective Points![0m
+[31m[ERROR] [1791851723.293195232]: No Effective Points![0m
+[31m[ERROR] [1791851723.293209249]: No Effective Points![0m
+[31m[ERROR] [1791851723.293217723]: No Effective Points![0m
+[31m[ERROR] [1791851723.295850226]: Too few input point cloud![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851723.398775331]: No Effective Points![0m
+[31m[ERROR] [1791851723.398784511]: No Effective Points![0m
+[31m[ERROR] [1791851723.398790957]: No Effective Points![0m
+[31m[ERROR] [1791851723.398797043]: No Effective Points![0m
+[31m[ERROR] [1791851723.398803611]: No Effective Points![0m
+[31m[ERROR] [1791851723.398810208]: No Effective Points![0m
+[31m[ERROR] [1791851723.398816034]: No Effective Points![0m
+[31m[ERROR] [1791851723.398827461]: No Effective Points![0m
+[31m[ERROR] [1791851723.398833810]: No Effective Points![0m
+[31m[ERROR] [1791851723.428915562]: No Effective Points![0m
+[31m[ERROR] [1791851723.428930037]: No Effective Points![0m
+[31m[ERROR] [1791851723.428936488]: No Effective Points![0m
+[31m[ERROR] [1791851723.428942322]: No Effective Points![0m
+[31m[ERROR] [1791851723.428947930]: No Effective Points![0m
+[31m[ERROR] [1791851723.428954422]: No Effective Points![0m
+[31m[ERROR] [1791851723.428960235]: No Effective Points![0m
+[31m[ERROR] [1791851723.428965786]: No Effective Points![0m
+[31m[ERROR] [1791851723.428971397]: No Effective Points![0m
+[31m[ERROR] [1791851723.503385282]: No Effective Points![0m
+[31m[ERROR] [1791851723.503403778]: No Effective Points![0m
+[31m[ERROR] [1791851723.503411970]: No Effective Points![0m
+[31m[ERROR] [1791851723.503418958]: No Effective Points![0m
+[31m[ERROR] [1791851723.503425463]: No Effective Points![0m
+[31m[ERROR] [1791851723.503431861]: No Effective Points![0m
+[31m[ERROR] [1791851723.503438355]: No Effective Points![0m
+[31m[ERROR] [1791851723.503448984]: No Effective Points![0m
+[31m[ERROR] [1791851723.503455630]: No Effective Points![0m
+[31m[ERROR] [1791851723.528970963]: No Effective Points![0m
+[31m[ERROR] [1791851723.528987460]: No Effective Points![0m
+[31m[ERROR] [1791851723.528996832]: No Effective Points![0m
+[31m[ERROR] [1791851723.529004936]: No Effective Points![0m
+[31m[ERROR] [1791851723.529012968]: No Effective Points![0m
+[31m[ERROR] [1791851723.529020826]: No Effective Points![0m
+[31m[ERROR] [1791851723.529028440]: No Effective Points![0m
+[31m[ERROR] [1791851723.529036416]: No Effective Points![0m
+[31m[ERROR] [1791851723.529043914]: No Effective Points![0m
+[31m[ERROR] [1791851723.608807864]: No Effective Points![0m
+[31m[ERROR] [1791851723.608825756]: No Effective Points![0m
+[31m[ERROR] [1791851723.608833301]: No Effective Points![0m
+[31m[ERROR] [1791851723.608839989]: No Effective Points![0m
+[31m[ERROR] [1791851723.608846459]: No Effective Points![0m
+[31m[ERROR] [1791851723.608852749]: No Effective Points![0m
+[31m[ERROR] [1791851723.608858833]: No Effective Points![0m
+[31m[ERROR] [1791851723.608864926]: No Effective Points![0m
+[31m[ERROR] [1791851723.608871214]: No Effective Points![0m
+[0m[31m[ERROR] [1791851723.628816963]: No Effective Points![0m
+[31m[ERROR] [1791851723.628831672]: No Effective Points![0m
+[31m[ERROR] [1791851723.628840301]: No Effective Points![0m
+[31m[ERROR] [1791851723.628848159]: No Effective Points![0m
+[31m[ERROR] [1791851723.628855337]: No Effective Points![0m
+[31m[ERROR] [1791851723.628865934]: No Effective Points![0m
+[31m[ERROR] [1791851723.628873022]: No Effective Points![0m
+[31m[ERROR] [1791851723.628880055]: No Effective Points![0m
+[31m[ERROR] [1791851723.628887232]: No Effective Points![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851723.718803709]: No Effective Points![0m
+[31m[ERROR] [1791851723.718815240]: No Effective Points![0m
+[31m[ERROR] [1791851723.718823564]: No Effective Points![0m
+[31m[ERROR] [1791851723.718831483]: No Effective Points![0m
+[31m[ERROR] [1791851723.718839111]: No Effective Points![0m
+[31m[ERROR] [1791851723.718846321]: No Effective Points![0m
+[31m[ERROR] [1791851723.718853743]: No Effective Points![0m
+[31m[ERROR] [1791851723.718860902]: No Effective Points![0m
+[31m[ERROR] [1791851723.718868291]: No Effective Points![0m
+[31m[ERROR] [1791851723.733080335]: No Effective Points![0m
+[31m[ERROR] [1791851723.733093512]: No Effective Points![0m
+[31m[ERROR] [1791851723.733100169]: No Effective Points![0m
+[31m[ERROR] [1791851723.733106111]: No Effective Points![0m
+[31m[ERROR] [1791851723.733112416]: No Effective Points![0m
+[31m[ERROR] [1791851723.733118385]: No Effective Points![0m
+[31m[ERROR] [1791851723.733124142]: No Effective Points![0m
+[31m[ERROR] [1791851723.733129985]: No Effective Points![0m
+[31m[ERROR] [1791851723.733135696]: No Effective Points![0m
+[31m[ERROR] [1791851723.823483678]: No Effective Points![0m
+[31m[ERROR] [1791851723.823501546]: No Effective Points![0m
+[31m[ERROR] [1791851723.823508683]: No Effective Points![0m
+[31m[ERROR] [1791851723.823514382]: No Effective Points![0m
+[31m[ERROR] [1791851723.823520249]: No Effective Points![0m
+[31m[ERROR] [1791851723.823526150]: No Effective Points![0m
+[31m[ERROR] [1791851723.823533143]: No Effective Points![0m
+[31m[ERROR] [1791851723.823538514]: No Effective Points![0m
+[31m[ERROR] [1791851723.823544888]: No Effective Points![0m
+[31m[ERROR] [1791851723.838735553]: No Effective Points![0m
+[31m[ERROR] [1791851723.838750029]: No Effective Points![0m
+[31m[ERROR] [1791851723.838756387]: No Effective Points![0m
+[31m[ERROR] [1791851723.838761763]: No Effective Points![0m
+[31m[ERROR] [1791851723.838767882]: No Effective Points![0m
+[31m[ERROR] [1791851723.838775469]: No Effective Points![0m
+[31m[ERROR] [1791851723.838780464]: No Effective Points![0m
+[31m[ERROR] [1791851723.838784917]: No Effective Points![0m
+[31m[ERROR] [1791851723.838789731]: No Effective Points![0m
+[31m[ERROR] [1791851723.933239901]: No Effective Points![0m
+[31m[ERROR] [1791851723.933258034]: No Effective Points![0m
+[31m[ERROR] [1791851723.933265228]: No Effective Points![0m
+[31m[ERROR] [1791851723.933270851]: No Effective Points![0m
+[31m[ERROR] [1791851723.933277423]: No Effective Points![0m
+[31m[ERROR] [1791851723.933283316]: No Effective Points![0m
+[31m[ERROR] [1791851723.933288924]: No Effective Points![0m
+[31m[ERROR] [1791851723.933294722]: No Effective Points![0m
+[31m[ERROR] [1791851723.933299980]: No Effective Points![0m
+[31m[ERROR] [1791851723.943236106]: No Effective Points![0m
+[31m[ERROR] [1791851723.943252616]: No Effective Points![0m
+[31m[ERROR] [1791851723.943260963]: No Effective Points![0m
+[31m[ERROR] [1791851723.943268708]: No Effective Points![0m
+[31m[ERROR] [1791851723.943275915]: No Effective Points![0m
+[31m[ERROR] [1791851723.943288203]: No Effective Points![0m
+[31m[ERROR] [1791851723.943295660]: No Effective Points![0m
+[31m[ERROR] [1791851723.943302709]: No Effective Points![0m
+[31m[ERROR] [1791851723.943309875]: No Effective Points![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851724.038910063]: No Effective Points![0m
+[31m[ERROR] [1791851724.038953945]: No Effective Points![0m
+[31m[ERROR] [1791851724.038967746]: No Effective Points![0m
+[31m[ERROR] [1791851724.038984375]: No Effective Points![0m
+[31m[ERROR] [1791851724.038998922]: No Effective Points![0m
+[31m[ERROR] [1791851724.039013882]: No Effective Points![0m
+[31m[ERROR] [1791851724.039026948]: No Effective Points![0m
+[31m[ERROR] [1791851724.039039333]: No Effective Points![0m
+[31m[ERROR] [1791851724.039054793]: No Effective Points![0m
+[31m[ERROR] [1791851724.053185275]: No Effective Points![0m
+[31m[ERROR] [1791851724.053199643]: No Effective Points![0m
+[31m[ERROR] [1791851724.053206923]: No Effective Points![0m
+[31m[ERROR] [1791851724.053214090]: No Effective Points![0m
+[31m[ERROR] [1791851724.053220433]: No Effective Points![0m
+[31m[ERROR] [1791851724.053226914]: No Effective Points![0m
+[31m[ERROR] [1791851724.053235554]: No Effective Points![0m
+[31m[ERROR] [1791851724.053242188]: No Effective Points![0m
+[31m[ERROR] [1791851724.053248455]: No Effective Points![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851724.148904868]: No Effective Points![0m
+[31m[ERROR] [1791851724.148919691]: No Effective Points![0m
+[31m[ERROR] [1791851724.148926513]: No Effective Points![0m
+[31m[ERROR] [1791851724.148933427]: No Effective Points![0m
+[31m[ERROR] [1791851724.148939537]: No Effective Points![0m
+[31m[ERROR] [1791851724.148946497]: No Effective Points![0m
+[31m[ERROR] [1791851724.148953182]: No Effective Points![0m
+[31m[ERROR] [1791851724.148959382]: No Effective Points![0m
+[31m[ERROR] [1791851724.148965431]: No Effective Points![0m
+[31m[ERROR] [1791851724.153134350]: No Effective Points![0m
+[31m[ERROR] [1791851724.153149666]: No Effective Points![0m
+[31m[ERROR] [1791851724.153156547]: No Effective Points![0m
+[31m[ERROR] [1791851724.153162914]: No Effective Points![0m
+[31m[ERROR] [1791851724.153174953]: No Effective Points![0m
+[31m[ERROR] [1791851724.153182155]: No Effective Points![0m
+[31m[ERROR] [1791851724.153190588]: No Effective Points![0m
+[31m[ERROR] [1791851724.153203220]: No Effective Points![0m
+[31m[ERROR] [1791851724.153216352]: No Effective Points![0m
+[31m[ERROR] [1791851724.253346115]: No Effective Points![0m
+[31m[ERROR] [1791851724.253362162]: No Effective Points![0m
+[31m[ERROR] [1791851724.253367826]: No Effective Points![0m
+[31m[ERROR] [1791851724.253373103]: No Effective Points![0m
+[31m[ERROR] [1791851724.253377739]: No Effective Points![0m
+[31m[ERROR] [1791851724.253382339]: No Effective Points![0m
+[31m[ERROR] [1791851724.253387350]: No Effective Points![0m
+[31m[ERROR] [1791851724.253392399]: No Effective Points![0m
+[31m[ERROR] [1791851724.253396825]: No Effective Points![0m
+[31m[ERROR] [1791851724.258593617]: No Effective Points![0m
+[31m[ERROR] [1791851724.258605804]: No Effective Points![0m
+[31m[ERROR] [1791851724.258611510]: No Effective Points![0m
+[31m[ERROR] [1791851724.258616997]: No Effective Points![0m
+[31m[ERROR] [1791851724.258622237]: No Effective Points![0m
+[31m[ERROR] [1791851724.258628033]: No Effective Points![0m
+[31m[ERROR] [1791851724.258633038]: No Effective Points![0m
+[31m[ERROR] [1791851724.258637599]: No Effective Points![0m
+[31m[ERROR] [1791851724.258642827]: No Effective Points![0m
+[31m[ERROR] [1791851724.261078585]: Too few input point cloud![0m
+[31m[ERROR] [1791851724.358917287]: Too few input point cloud![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851724.463027567]: No Effective Points![0m
+[31m[ERROR] [1791851724.463040522]: No Effective Points![0m
+[31m[ERROR] [1791851724.463046516]: No Effective Points![0m
+[31m[ERROR] [1791851724.463051848]: No Effective Points![0m
+[31m[ERROR] [1791851724.463056497]: No Effective Points![0m
+[31m[ERROR] [1791851724.463061566]: No Effective Points![0m
+[31m[ERROR] [1791851724.463066470]: No Effective Points![0m
+[31m[ERROR] [1791851724.463071249]: No Effective Points![0m
+[31m[ERROR] [1791851724.463076401]: No Effective Points![0m
+[31m[ERROR] [1791851724.479046028]: No Effective Points![0m
+[31m[ERROR] [1791851724.479058243]: No Effective Points![0m
+[31m[ERROR] [1791851724.479064401]: No Effective Points![0m
+[31m[ERROR] [1791851724.479069968]: No Effective Points![0m
+[31m[ERROR] [1791851724.479075546]: No Effective Points![0m
+[31m[ERROR] [1791851724.479080778]: No Effective Points![0m
+[31m[ERROR] [1791851724.479085890]: No Effective Points![0m
+[31m[ERROR] [1791851724.479091270]: No Effective Points![0m
+[31m[ERROR] [1791851724.479096119]: No Effective Points![0m
+[31m[ERROR] [1791851724.573157583]: No Effective Points![0m
+[31m[ERROR] [1791851724.573174460]: No Effective Points![0m
+[31m[ERROR] [1791851724.573182480]: No Effective Points![0m
+[31m[ERROR] [1791851724.573192637]: No Effective Points![0m
+[31m[ERROR] [1791851724.573202359]: No Effective Points![0m
+[31m[ERROR] [1791851724.573209684]: No Effective Points![0m
+[31m[ERROR] [1791851724.573216841]: No Effective Points![0m
+[31m[ERROR] [1791851724.573223993]: No Effective Points![0m
+[31m[ERROR] [1791851724.573230985]: No Effective Points![0m
+[31m[ERROR] [1791851724.583175853]: No Effective Points![0m
+[31m[ERROR] [1791851724.583189557]: No Effective Points![0m
+[31m[ERROR] [1791851724.583196447]: No Effective Points![0m
+[31m[ERROR] [1791851724.583202656]: No Effective Points![0m
+[31m[ERROR] [1791851724.583208746]: No Effective Points![0m
+[31m[ERROR] [1791851724.583219159]: No Effective Points![0m
+[31m[ERROR] [1791851724.583230728]: No Effective Points![0m
+[31m[ERROR] [1791851724.583239607]: No Effective Points![0m
+[31m[ERROR] [1791851724.583246171]: No Effective Points![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851724.678860562]: No Effective Points![0m
+[31m[ERROR] [1791851724.678872963]: No Effective Points![0m
+[31m[ERROR] [1791851724.678881599]: No Effective Points![0m
+[31m[ERROR] [1791851724.678889531]: No Effective Points![0m
+[31m[ERROR] [1791851724.678897566]: No Effective Points![0m
+[31m[ERROR] [1791851724.678905391]: No Effective Points![0m
+[31m[ERROR] [1791851724.678913187]: No Effective Points![0m
+[31m[ERROR] [1791851724.678920992]: No Effective Points![0m
+[31m[ERROR] [1791851724.678928807]: No Effective Points![0m
+[31m[ERROR] [1791851724.688858230]: No Effective Points![0m
+[31m[ERROR] [1791851724.688878520]: No Effective Points![0m
+[31m[ERROR] [1791851724.688887023]: No Effective Points![0m
+[31m[ERROR] [1791851724.688901234]: No Effective Points![0m
+[31m[ERROR] [1791851724.688914105]: No Effective Points![0m
+[31m[ERROR] [1791851724.688921948]: No Effective Points![0m
+[31m[ERROR] [1791851724.688934866]: No Effective Points![0m
+[31m[ERROR] [1791851724.688945770]: No Effective Points![0m
+[31m[ERROR] [1791851724.688952667]: No Effective Points![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851724.783170444]: No Effective Points![0m
+[31m[ERROR] [1791851724.783183232]: No Effective Points![0m
+[31m[ERROR] [1791851724.783192174]: No Effective Points![0m
+[31m[ERROR] [1791851724.783200257]: No Effective Points![0m
+[31m[ERROR] [1791851724.783208556]: No Effective Points![0m
+[31m[ERROR] [1791851724.783216941]: No Effective Points![0m
+[31m[ERROR] [1791851724.783224648]: No Effective Points![0m
+[31m[ERROR] [1791851724.783232795]: No Effective Points![0m
+[31m[ERROR] [1791851724.783245824]: No Effective Points![0m
+[31m[ERROR] [1791851724.788840286]: No Effective Points![0m
+[31m[ERROR] [1791851724.792298409]: No Effective Points![0m
+[31m[ERROR] [1791851724.792318278]: No Effective Points![0m
+[31m[ERROR] [1791851724.792334144]: No Effective Points![0m
+[31m[ERROR] [1791851724.792342384]: No Effective Points![0m
+[31m[ERROR] [1791851724.792352795]: No Effective Points![0m
+[31m[ERROR] [1791851724.792362661]: No Effective Points![0m
+[31m[ERROR] [1791851724.792373875]: No Effective Points![0m
+[31m[ERROR] [1791851724.792382193]: No Effective Points![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851724.888951113]: No Effective Points![0m
+[31m[ERROR] [1791851724.888965571]: No Effective Points![0m
+[31m[ERROR] [1791851724.888973153]: No Effective Points![0m
+[31m[ERROR] [1791851724.888978828]: No Effective Points![0m
+[31m[ERROR] [1791851724.888984590]: No Effective Points![0m
+[31m[ERROR] [1791851724.888990154]: No Effective Points![0m
+[31m[ERROR] [1791851724.888996341]: No Effective Points![0m
+[31m[ERROR] [1791851724.889002225]: No Effective Points![0m
+[31m[ERROR] [1791851724.889007945]: No Effective Points![0m
+[31m[ERROR] [1791851724.893096733]: No Effective Points![0m
+[31m[ERROR] [1791851724.893111120]: No Effective Points![0m
+[31m[ERROR] [1791851724.893117529]: No Effective Points![0m
+[31m[ERROR] [1791851724.893123852]: No Effective Points![0m
+[31m[ERROR] [1791851724.893129632]: No Effective Points![0m
+[31m[ERROR] [1791851724.893135485]: No Effective Points![0m
+[31m[ERROR] [1791851724.893140746]: No Effective Points![0m
+[31m[ERROR] [1791851724.893145476]: No Effective Points![0m
+[31m[ERROR] [1791851724.893151394]: No Effective Points![0m
+[31m[ERROR] [1791851724.999104943]: No Effective Points![0m
+[31m[ERROR] [1791851724.999123254]: No Effective Points![0m
+[31m[ERROR] [1791851724.999131942]: No Effective Points![0m
+[31m[ERROR] [1791851724.999139114]: No Effective Points![0m
+[31m[ERROR] [1791851724.999146759]: No Effective Points![0m
+[31m[ERROR] [1791851724.999153542]: No Effective Points![0m
+[31m[ERROR] [1791851724.999161017]: No Effective Points![0m
+[31m[ERROR] [1791851724.999168183]: No Effective Points![0m
+[31m[ERROR] [1791851724.999175083]: No Effective Points![0m
+[0m[ INFO] [1791851726.492604600]: x_slam: in_num: 20, local_vox_num: 17, takes 0.16ms, 0.62ms, pose:(446616.53, -59777.93, -117675.8[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851726.596127201]: No Effective Points![0m
+[31m[ERROR] [1791851726.596169829]: No Effective Points![0m
+[31m[ERROR] [1791851726.596198723]: No Effective Points![0m
+[31m[ERROR] [1791851726.596224414]: No Effective Points![0m
+[31m[ERROR] [1791851726.596249944]: No Effective Points![0m
+[31m[ERROR] [1791851726.596290138]: No Effective Points![0m
+[31m[ERROR] [1791851726.596317758]: No Effective Points![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851728.286178696]: Too few input point cloud![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851728.796220658]: Too few input point cloud![0m
+[31m[ERROR] [1791851728.902029444]: Too few input point cloud![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851729.003269905]: Too few input point cloud![0m
+[31m[ERROR] [1791851729.013269236]: Too few input point cloud![0m
+[31m[ERROR] [1791851729.135400783]: Too few input point cloud![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851731.018922524]: No Effective Points![0m
+[31m[ERROR] [1791851731.018942653]: No Effective Points![0m
+[31m[ERROR] [1791851731.018951032]: No Effective Points![0m
+[31m[ERROR] [1791851731.018962164]: No Effective Points![0m
+[31m[ERROR] [1791851731.018971731]: No Effective Points![0m
+[31m[ERROR] [1791851731.018983500]: No Effective Points![0m
+[31m[ERROR] [1791851731.018993278]: No Effective Points![0m
+[31m[ERROR] [1791851731.019005166]: No Effective Points![0m
+[31m[ERROR] [1791851731.019014273]: No Effective Points![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851731.123325697]: No Effective Points![0m
+[31m[ERROR] [1791851731.123337262]: No Effective Points![0m
+[31m[ERROR] [1791851731.123347585]: No Effective Points![0m
+[31m[ERROR] [1791851731.123354609]: No Effective Points![0m
+[31m[ERROR] [1791851731.123360917]: No Effective Points![0m
+[31m[ERROR] [1791851731.123367223]: No Effective Points![0m
+[31m[ERROR] [1791851731.123373943]: No Effective Points![0m
+[31m[ERROR] [1791851731.123380270]: No Effective Points![0m
+[31m[ERROR] [1791851731.123392071]: No Effective Points![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851731.126541610]: No Effective Points![0m
+[31m[ERROR] [1791851731.126555375]: No Effective Points![0m
+[31m[ERROR] [1791851731.126562623]: No Effective Points![0m
+[31m[ERROR] [1791851731.126572726]: No Effective Points![0m
+[31m[ERROR] [1791851731.126582727]: No Effective Points![0m
+[31m[ERROR] [1791851731.126590846]: No Effective Points![0m
+[31m[ERROR] [1791851731.126600717]: No Effective Points![0m
+[31m[ERROR] [1791851731.126610930]: No Effective Points![0m
+[31m[ERROR] [1791851731.126621358]: No Effective Points![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851731.228979537]: No Effective Points![0m
+[31m[ERROR] [1791851731.229001715]: No Effective Points![0m
+[31m[ERROR] [1791851731.229013180]: No Effective Points![0m
+[31m[ERROR] [1791851731.229021951]: No Effective Points![0m
+[31m[ERROR] [1791851731.229028687]: No Effective Points![0m
+[31m[ERROR] [1791851731.229034737]: No Effective Points![0m
+[31m[ERROR] [1791851731.229047554]: No Effective Points![0m
+[31m[ERROR] [1791851731.229058732]: No Effective Points![0m
+[31m[ERROR] [1791851731.229069138]: No Effective Points![0m
+[31m[ERROR] [1791851731.232170491]: Too few input point cloud![0m
+[0m[ INFO] [1791851734.192234421]: x_slam: in_num: 48, local_vox_num: 43, t[31m[ERROR] [1791851734.192301228]: Too few input point cloud![0m
+[31m[ERROR] [1791851734.292099474]: Too few input point cloud![0m
+[0m[ INFO] [1791851735.572218049]: x_slam: in_num: 28, local_vox_num: 20, takes 2.71ms, 0.71ms, pose:(606259.8[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851735.755072491]: Too few input point cloud![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851735.861247823]: Too few input point cloud![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851736.205318615]: Too few input point cloud![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851736.832405862]: Too few input point cloud![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851737.848349513]: Too few input point cloud![0m
+[0m[ INFO] [1791851738.806030889]: x_sla[31m[ERROR] [1791851738.844056564]: Too few input point cloud![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851739.048547095]: Too few input point cloud![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851741.415773534]: Too few input point cloud![0m
+[31m[ERROR] [1791851744.565745469]: Too few input point cloud![0m
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.[31m[ERROR] [1791851744.856063923]: Too few input point cloud![0m
+[31m[ERROR] [1791851744.961426451]: Too few input point cloud![0m
+[31m[ERROR] [1791851746.971890199]: Too few input point cloud![0m
+terminate called after throwing an instance of 'gtsam::IndeterminantLinearSystemException'
+http://borg.cc.gatech.edu/ on gtsam::IndeterminantLinearSystemException for
+[0m[ INFO] [1791851782.465794634]: Subscribed to topic "/x_nav/goal_path" (nav_msgs/Path) on channel 83[0m
+[0m[ INFO] [1791851804.524141532]: Unsubscribing from topic "/x_nav/goal_path" (nav_msgs/Path) on channel 83[0m
+[0m[ INFO] [1791851804.972365065]: Subscribed to topic "/x_nav/goal_path" (nav_msgs/Path) on channel 83[0m
+[0m[ INFO] [1791851858.980851835]: Unsubscribing from topic "/x_nav/goal_path" (nav_msgs/Path) on channel 83[0m
+[0m[ INFO] [1791851872.433168060]: Subscribed to topic "/x_nav/goal_path" (nav_msgs/Path) on channel 83[0m
+Failed to find match for field 'normal_x'.
+Failed to find match for field 'normal_y'.
+Failed to find match for field 'normal_z'.
+Failed to find match for field 'curvature'.
+Failed to find match for field 'normal_x'.
+Failed to find match for field 'normal_y'.
+Failed to find match for field 'normal_z'.
+Failed to find match for field 'curvature'.
+[0m[ INFO] [1791851919.977101248]: Added subscriber #2 to topic "/x_nav/goal_path" (nav_msgs/Path) on channel 83[0m
+[0m[ INFO] [1791852290.286450707]: Unsubscribing from topic "/x_nav/goal_path" (nav_msgs/Path) on channel 83[0m
+Failed to find match for field 'normal_x'.
+Failed to find match for field 'normal_y'.
+Failed to find match for field 'normal_z'.
+Failed to find match for field 'curvature'.
+[0m[ INFO] [1791852214.126393294]: [w_nav] GOAL reached 0.14[0m
+Failed to find match for field 'normal_x'.
+Failed to find match for field 'normal_y'.
+Failed to find match for field 'normal_z'.
+Failed to find match for field 'curvature'.
+[0m[ INFO] [1791852339.562700598]: [w_nav] GOAL reached 0.02[0m
+[0m[ INFO] [1791852358.113872878]: [w_nav] GOAL reached 0.12[0m
+[0m[ INFO] [1791852379.894603015]: [w_nav] GOAL reached 0.13[0m
+[0m[ INFO] [1791852391.250250069]: [w_nav] GOAL reached 0.20[0m
+[0m[ INFO] [1791852401.149406757]: [w_nav] GOAL reached 0.01[0m
+[0m[ INFO] [1791852413.806116864]: [w_nav] GOAL reached 0.08[0m
+[0m[ INFO] [1791852435.890425409]: [w_nav] GOAL reached 0.07[0m
+[31m[ERROR] [1791852466.279595508]: [WS] handle_read_frame error: websocketpp.transport:7 (End of File)[0m
+[0m[ INFO] [1791852290.713145120]: Subscribed to topic "/x_nav/goal_path" (nav_msgs/Path) on channel 83[0m
+[0m[ INFO] [1791852466.282529198]: Unsubscribing from topic "/x_nav/goal_path" (nav_msgs/Path) on channel 83[0m
+Failed to find match for field 'normal_x'.
+Failed to find match for field 'normal_y'.
+Failed to find match for field 'normal_z'.
+Failed to find match for field 'curvature'.
+参数: {"taskName":"测试10121959","loopCount":1,"scheduleType":"","executeTime":"","cronExpression":"","executed":false,"lastRunTime":"","subTasks":[{"action":"H","wait":1,"target":{"map":"1009","mapIndex":1}},{"action":"I","wait":0,"target":{"map":"1009","mapIndex":1,"waypoint":"2","waypointIndex":2}},{"action":"L","wait":"0","target":{"map":"1009","mapIndex":1,"waypoint":"5","waypointIndex":5}},{"action":"L","wait":0,"target":{"map":"1009","mapIndex":1,"waypoint":"4","waypointIndex":4}},{"action":"E","wait":"0","target":{"map":"1009","mapIndex":1,"waypoint":"6","waypointIndex":6}},{"action":"L","wait":"0","target":{"map":"1009","mapIndex":1,"waypoint":"7","waypointIndex":7}},{"action":"L","wait":"0","target":{"map":"1009","mapIndex":1,"waypoint":"8","waypointIndex":8}},{"action":"L","wait":"0","target":{"map":"1009","mapIndex":1,"waypoint":"9","waypointIndex":9}},{"action":"L","wait":"0","target":{"map":"1009","mapIndex":1,"waypoint":"2","waypointIndex":2}}],"defaults":{"beforeSteps":[],"afterSteps":[],"errorSteps":[]}}
+参数: {"taskName":"测试10121959","loopCount":1,"scheduleType":"","executeTime":"","cronExpression":"","executed":false,"lastRunTime":"","subTasks":[{"action":"H","wait":1,"target":{"map":"1009","mapIndex":1}},{"action":"I","wait":0,"target":{"map":"1009","mapIndex":1,"waypoint":"2","waypointIndex":2}},{"action":"L","wait":"0","target":{"map":"1009","mapIndex":1,"waypoint":"5","waypointIndex":5}},{"action":"L","wait":0,"target":{"map":"1009","mapIndex":1,"waypoint":"4","waypointIndex":4}},{"action":"E","wait":"0","target":{"map":"1009","mapIndex":1,"waypoint":"6","waypointIndex":6}},{"action":"L","wait":"0","target":{"map":"1009","mapIndex":1,"waypoint":"7","waypointIndex":7}},{"action":"L","wait":"0","target":{"map":"1009","mapIndex":1,"waypoint":"8","waypointIndex":8}},{"action":"L","wait":"0","target":{"map":"1009","mapIndex":1,"waypoint":"9","waypointIndex":9}},{"action":"L","wait":"0","target":{"map":"1009","mapIndex":1,"waypoint":"2","waypointIndex":2}}],"defaults":{"beforeSteps":[],"afterSteps":[],"errorSteps":[]}}
+Failed to find match for field 'normal_x'.
+Failed to find match for field 'normal_y'.
+Failed to find match for field 'normal_z'.
+Failed to find match for field 'curvature'.

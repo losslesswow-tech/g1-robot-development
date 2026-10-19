@@ -1,0 +1,40 @@
+# G1 remote-bridge observation profile.
+#
+# The navigation container consumes ROS1 data from the Jetson bridge.  It does
+# not contain or start Unitree DDS control code.  The controller, planner, SLAM
+# and sensor processes are all disabled by default, and any velocity output is
+# redirected away from /cmd_vel as a second guard.
+
+tasks: []
+
+robot:
+  sub_cmd_vel_topic: /g1_navigation/blocked_cmd_vel
+  networkInterface: disabled
+
+x_nav:
+  password: "" 
+  nav_path: /nav
+  nav_map_path: /nav_map
+  web_dist_path: /catkin_ws/src/x_nav_control/scripts/dist
+  nav_log_path: /log
+  sensor_lidar: DISABLED
+  robot_model: G1_REMOTE_READ_ONLY
+
+  planner_run: false
+  slam_run: false
+  auto_check_flags: []
+  auto_run_commands_flags: []
+  commands_config: {}
+
+  planner:
+    topic_vel_out: /g1_navigation/blocked_cmd_vel
+    topic_local_path_out: /x_nav/local_path
+    topic_goal_path_out: /x_nav/goal_path
+    topic_base_link_pose_in: /base_link/odom
+    topic_lidar_noground_in: /x_nav/current_pointcloud_noground
+    topic_extern_navpath: /topological_path
+
+  bridge:
+    status_topic: /sdk/bridge_status
+    imu_topic: /sdk/imu
+    expected_mode: read_only

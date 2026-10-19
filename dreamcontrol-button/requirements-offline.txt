@@ -1,0 +1,5 @@
+numpy==1.26.4
+PyYAML==6.0.2
+mujoco==3.3.7
+# Install torch from the official CPU wheel index separately.
+# torch==2.7.1+cpu --index-url https://download.pytorch.org/whl/cpu

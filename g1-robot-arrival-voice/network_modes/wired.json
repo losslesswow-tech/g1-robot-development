@@ -1,0 +1,12 @@
+{
+  "mode": "wired",
+  "interface": "enp132s0",
+  "navigation_ip": "192.0.2.6",
+  "robot_wifi_ip": "192.0.2.18",
+  "ros_master_uri": "http://192.0.2.5:11311",
+  "ros_ip": "192.0.2.5",
+  "radar_ip": "192.0.2.14",
+  "audio_url": "http://127.0.0.1:18768",
+  "session_seconds": 1800,
+  "default_motion_enabled": false
+}

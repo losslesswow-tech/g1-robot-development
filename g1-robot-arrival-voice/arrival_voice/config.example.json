@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "max_task_seconds": 300,
+  "points": [
+    {"map_name": "1009", "point_name": "2", "mode": "tts", "speaker_id": 0,
+     "text": "已到达二号导航点。请在这里填写该点对应的讲解内容。"},
+    {"map_name": "1009", "point_name": "原点", "mode": "tts", "speaker_id": 0,
+     "text": "已返回原点。"}
+  ]
+}

@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.10)
+project(g1_teach_session LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+find_package(unitree_sdk2 REQUIRED CONFIG)
+add_executable(g1_teach_transport teach_transport.cpp)
+target_link_libraries(g1_teach_transport PRIVATE unitree_sdk2 pthread)
+add_executable(g1_gravity_test gravity_test.cpp)

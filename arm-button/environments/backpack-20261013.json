@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "robot_model": "Unitree G1",
+  "hand_model": "Inspire RH56DFTP",
+  "management_host": "192.0.2.1",
+  "ssh_user": "operator",
+  "navigation_container": "robot-navigation-example",
+  "bridge_container": "g1-bridge-migrated-20261013",
+  "dds_interface": "eno1",
+  "dds_domain": 0,
+  "ros_ip": "192.0.2.2",
+  "ros_master_uri": "http://192.0.2.2:11311",
+  "host_development_root": "/home/operator/g1-migration-20261013/cutover/development",
+  "container_development_root": "/opt/g1-development",
+  "preview_url": "http://192.0.2.1:8000/g1-arm/",
+  "navigation_url": "http://192.0.2.1:8000/app/rviz.html",
+  "hand_readonly_url": "http://192.0.2.1:8768/",
+  "hand_control_url": "http://192.0.2.1:8769/",
+  "motion_paused": true,
+  "coordinate_frame": "upright torso: X forward, Y left, Z up; floor height uncalibrated",
+  "joint_angle_unit": "rad",
+  "joint_velocity_unit": "rad/s"
+}

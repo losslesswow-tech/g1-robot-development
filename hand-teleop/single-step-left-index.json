@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "side": "L",
+  "channel": 3,
+  "min_raw": 82,
+  "max_raw": 200,
+  "hold_targets": [2, 4, 44, 200, 1, 978],
+  "reference_actual": [0, 4, 43, 200, 1, 963],
+  "evidence": "2026-10-12: user authorized left-index target200, then confirmed the index visibly opened. Target register1486 and actual1546 read back separately. This is a bounded raw-position trial, not angle calibration."
+}

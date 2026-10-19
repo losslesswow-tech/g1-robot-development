@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="voice-token" content="__VOICE_TOKEN__">
+  <title>G1 导航点语音播报</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">G1</span><div><strong>导航点语音播报</strong><span class="brand-sub">点位内容管理</span></div></div>
+      <span class="mode-badge" id="backend-badge">正在载入</span>
+    </header>
+    <section class="intro">
+      <div><p class="eyebrow">ANNOUNCEMENTS</p><h1>为每个导航点，设置播报内容</h1><p class="lead">输入讲解文字或导入预录音频，保存后即可用于对应点位。</p></div>
+      <a class="export-link" href="/api/export.zip">导出配置包 <span aria-hidden="true">↗</span></a>
+    </section>
+    <main class="workspace">
+      <aside class="points-panel">
+        <div class="panel-heading"><h2>导航点</h2><span class="count" id="point-count">0</span></div>
+        <label class="sr-only" for="point-search">搜索导航点</label>
+        <input id="point-search" class="search" placeholder="搜索地图或导航点" type="search">
+        <div id="point-list" class="point-list" aria-label="已保存的导航点"></div>
+        <button id="new-point" class="new-point" type="button"><span aria-hidden="true">＋</span> 添加导航点</button>
+        <p class="aside-note">点位内容保存在本机。导出配置包会同时包含已保存的音频。</p>
+      </aside>
+      <section class="editor-panel">
+        <div class="editor-heading"><div><p class="eyebrow">CONTENT EDITOR</p><h2 id="editor-title">编辑播报内容</h2></div><span id="save-state" class="save-state">已载入</span></div>
+        <form id="editor-form">
+          <div class="identity-row">
+            <label>地图名称<input id="map-name" name="map_name" maxlength="256" required placeholder="例如：1009" autocomplete="off"></label>
+            <label>导航点名称<input id="point-name" name="point_name" maxlength="256" required placeholder="例如：2 或 原点" autocomplete="off"></label>
+          </div>
+          <fieldset class="format-field"><legend>播报方式</legend>
+            <div class="tabs"><label class="tab"><input type="radio" name="mode" value="tts" checked><span>文字转语音</span></label><label class="tab"><input type="radio" name="mode" value="wav"><span>预录音频</span></label></div>
+          </fieldset>
+          <div id="text-panel">
+            <div class="field-heading"><label for="speech-text">播报文字</label><span id="char-count">0 / 1000</span></div>
+            <textarea id="speech-text" maxlength="1000" placeholder="在这里输入到达该点后需要播报的内容……"></textarea>
+            <div class="language-row"><label for="speaker-id">播报语言</label><select id="speaker-id"><option value="0">中文</option><option value="1">English</option></select><span>将使用 G1 自带文字转语音。</span></div>
+          </div>
+          <div id="audio-panel" hidden>
+            <div class="dropzone" id="dropzone">
+              <div class="audio-icon" aria-hidden="true">♫</div><h3>导入预录音频</h3><p>将 WAV 文件拖到这里，或点击选择文件</p>
+              <label class="choose-file" for="audio-file">选择音频文件</label><input id="audio-file" type="file" accept=".wav,audio/wav" class="sr-only">
+              <small>16 kHz · 单声道 · 16 位 PCM · 最长 5 分钟</small>
+            </div>
+            <div id="audio-summary" class="audio-summary" hidden><div><strong id="audio-name"></strong><span id="audio-detail"></span></div><audio id="audio-preview" controls preload="metadata"></audio><p>这里的试听通过当前电脑播放。</p></div>
+          </div>
+          <div id="feedback" class="feedback" role="status" aria-live="polite" hidden></div>
+          <div class="actions"><button class="primary" id="save-button" type="submit">保存到导航点</button><button class="secondary" id="test-button" type="button">模拟播报</button></div>
+          <p id="test-note" class="test-note">模拟播报仅检查当前内容，不会让机器人发声。</p>
+        </form>
+      </section>
+    </main>
+    <footer><span id="automatic-status">自动到达播报：监听器未连接</span><button id="automatic-toggle" class="secondary" type="button" disabled>启用自动播报</button></footer>
+    <p class="test-note" id="automatic-detail">启用后从下一次导航开始监听。旧导航协议没有任务 ID，跨任务迟到结果仍可能误关联。</p>
+  </div>
+</body>
+</html>

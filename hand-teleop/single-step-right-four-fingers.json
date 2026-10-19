@@ -1,0 +1,12 @@
+{
+  "schema": 4,
+  "side": "R",
+  "channels": [0, 1, 2, 3, 4, 5],
+  "multi_channels": [0, 1, 2, 3],
+  "max_step": [500, 500, 500, 500, 500, 50],
+  "min_raw": [0, 0, 0, 0, 0, 950],
+  "max_raw": [500, 500, 500, 500, 500, 1000],
+  "hold_targets": [0, 0, 0, 0, 0, 1000],
+  "reference_actual": [0, 0, 0, 1, 3, 987],
+  "evidence": "2026-10-12 user reported single-channel testing complete and explicitly requested four-finger multichannel control. Only channels0..3 may change together; thumb bend4 and rotation5 remain individually controlled. Existing raw ranges retained, current commanded and feedback positions read separately. No physical angle calibration claimed; original driver, speed300, six-channel arrival criterion and manual one-shot sessions retained."
+}

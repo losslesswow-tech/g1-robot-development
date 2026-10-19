@@ -1,0 +1,7 @@
+{
+  "base_url": "https://llm-4nfolspkfnl4xxg4.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "model": "cosyvoice-v3-flash",
+  "voice": "longanyang",
+  "api_key_env": "DASHSCOPE_API_KEY",
+  "timeout_seconds": 45
+}

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>灵巧手 · 三维控制台</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header><div class="brand"><span class="brand-icon">✣</span><div><strong>灵巧手控制台</strong><small>INSPIRE RH56DFTP · 鼠标姿态编辑</small></div></div><span id="mode" class="pill">正在加载</span></header>
+  <main>
+    <section class="viewport-card">
+      <div class="view-top"><div class="switch" aria-label="选择手"><button id="left">左手</button><button id="right" class="active">右手</button></div><span class="muted">长条指节 · 球形关节</span></div>
+      <div id="viewport" tabindex="0" aria-label="三维手部视图，点击手指上下拖动调整，拖动空白旋转视角"></div>
+      <div class="view-bottom"><div><span id="selection">食指</span><small>点选手指，上下拖动调整弯曲</small></div><div class="view-buttons"><button id="front">正面</button><button id="oblique">斜侧</button><button id="reset-camera">复位视角</button></div></div>
+      <div class="legend"><span><i class="dot target"></i>编辑目标</span><span><i class="dot feedback"></i>实测姿态（连接后）</span><span id="model-note">示意角度尚未标定</span></div>
+    </section>
+    <aside>
+      <section class="panel"><div class="section-title"><h1>手指位置</h1><span class="muted" id="side-label">右手 · 6 路控制</span></div><p class="intro">拖动滑条或三维手指。拇指弯曲与旋转分开调整。</p><div id="controls"></div><div class="note">初始外观按照片对齐。未标定时显示 0–1000 原始位置，其他姿态仍为示意。</div></section>
+      <section class="panel connection"><div class="section-title"><h2>实物联动</h2><span id="connection-state" class="pill neutral">离线</span></div><p id="connection-description">离线编辑不会连接或驱动实物。</p><label class="token-label" for="token">连接口令</label><div class="connect-row"><input id="token" type="password" placeholder="启动窗口中的连接口令" autocomplete="off"><button id="connect">连接读取</button></div><div class="action-row"><button id="adopt" disabled>采用实测位置</button><button id="arm" disabled>开启实物联动</button><button id="disarm" class="danger" disabled>关闭联动</button></div><label class="check"><input id="onsite" type="checkbox">我在现场观察，手部空载且周围已清空</label><p class="note">关闭联动只禁止后续发送，不能取消已经发出的目标。</p><div id="message" role="status">准备就绪 · 可直接编辑三维姿态</div></section>
+      <section class="panel" id="single-step-panel" hidden><h2 id="step-title">逐路单步控制</h2><p id="step-description">先准备，再调整一路并手动发送。</p><button id="send-step" disabled>发送一次目标</button><p class="note">每次只发送一个目标，结束后需重新准备。未到位时不自动重试。模型角度仍为示意。</p></section>
+      <section class="panel compact"><div class="section-title"><h2>姿态文件</h2><span class="muted">保存本次编辑</span></div><div class="action-row"><button id="export">导出姿态</button><button id="import">导入姿态</button><input id="file" type="file" accept="application/json,.json" hidden></div><p class="note">导入只更新离线编辑；不自动开启或发送实物动作。</p></section>
+    </aside>
+  </main>
+  <footer>操作：点击指节选择 · 上下拖动调整 · 空白处拖动旋转 · 滚轮缩放 <span id="feedback-age">尚无实物读数</span></footer>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

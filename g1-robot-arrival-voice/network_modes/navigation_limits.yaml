@@ -1,0 +1,10 @@
+# Candidate session caps in m/s and rad/s. Load only during supervised handover,
+# with planning stopped, then verify the planner actually uses these parameters.
+x_nav:
+  planner:
+    min_v_x: 0.10
+    min_v_y: 0.10
+    min_v_yaw: 0.10
+    max_v_x: 0.30
+    max_v_y: 0.20
+    max_v_yaw: 0.30

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>g1_description</name>
+  <version>1.0.0</version>
+  <description>Official Unitree G1 (g1_29dof_rev_1_0) URDF description</description>
+  <maintainer email="developer@example.invalid">DSH</maintainer>
+  <license>BSD</license>
+</package>

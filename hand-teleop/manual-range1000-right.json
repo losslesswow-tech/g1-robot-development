@@ -1,0 +1,61 @@
+{
+  "schema": 6,
+  "side": "R",
+  "channels": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "multi_channels": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "max_step": [
+    1000,
+    1000,
+    1000,
+    1000,
+    1000,
+    50
+  ],
+  "min_raw": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    950
+  ],
+  "max_raw": [
+    1000,
+    1000,
+    1000,
+    1000,
+    1000,
+    1000
+  ],
+  "hold_targets": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1000
+  ],
+  "reference_actual": [
+    1,
+    0,
+    0,
+    2,
+    3,
+    987
+  ],
+  "evidence": "2026-10-13 user requested upper limit1000 for the existing bilateral six-channel manual controls. First five raw channels0-1000; rotation retains950-1000. Current command targets and feedback read separately at update; no motion, no angle calibration, no target compensation or automatic retry. 2026-10-13 explicit user authorization: right index to0 once; other channels retain device command targets. Reference refreshed after readback; no feedback compensation."
+}

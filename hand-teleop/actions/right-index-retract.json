@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "name": "收食指",
+  "action": "V",
+  "target": {"handAction": "right_index_retract"},
+  "side": "R",
+  "channel": 3,
+  "raw_target": 0,
+  "other_channels": "hold_device_command_targets",
+  "speed": 300,
+  "retries": 0
+}

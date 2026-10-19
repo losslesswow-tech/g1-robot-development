@@ -1,0 +1,25 @@
+{
+  "repository": "https://github.com/lez666/g1-arm-teach-play",
+  "commit": "28ef85a7198eab82115087f8b3c82fa9f49ff961",
+  "archive_sha256": "b5bb23a781f479ee6fe819ffa7f755bfd6c4a15802931fc87e9a2650060f0bf2",
+  "source_files": {
+    "vendor/28ef85a7198eab82115087f8b3c82fa9f49ff961/.gitignore": "4ecfab1b62fd069f4a7ec1d7fd45834cc57246fd993e4cd2f8dd1416e429e4e7",
+    "vendor/28ef85a7198eab82115087f8b3c82fa9f49ff961/CMakeLists.txt": "0924f9f6197f63c1539b5a66fe3315454dd5c89e5eb6c838738d9d236822e0e4",
+    "vendor/28ef85a7198eab82115087f8b3c82fa9f49ff961/LICENSE": "e20d3cac6012bdb82bdc34ed228d39d9db21fd4363c47aaba5bde492052c51ce",
+    "vendor/28ef85a7198eab82115087f8b3c82fa9f49ff961/README.md": "f8df5d0de9eeb79ec0d1ca32109f51eb78753ebe5542b1d9e7b79d3317e22834",
+    "vendor/28ef85a7198eab82115087f8b3c82fa9f49ff961/docs/env-setup.md": "3625e56f1ab4517b5e6523bc94794fad5e1f6b70ae0f1b36aea712ed46924bc5",
+    "vendor/28ef85a7198eab82115087f8b3c82fa9f49ff961/play.cpp": "16618ca3ffd0b0e4f893b62c7bae64203216d89f731efb9f6d703b7b17dcba7a",
+    "vendor/28ef85a7198eab82115087f8b3c82fa9f49ff961/play_with_motions.cpp": "70ff1eb5c5d3d694599ad1c5b88183c4d26fa574cf5d75000d8dfc6f65e21e18",
+    "vendor/28ef85a7198eab82115087f8b3c82fa9f49ff961/systemd/g1-arm7-watchdog.service": "1347070a3ffa03d90d49a47396b000c2a02ba5ef85698667784e96c00c42ce64",
+    "vendor/28ef85a7198eab82115087f8b3c82fa9f49ff961/teach.cpp": "a4693be95b5ccd37c4a3ff00be81d7f7414b579102e8c335b876f9e2b9b9b415",
+    "vendor/28ef85a7198eab82115087f8b3c82fa9f49ff961/teach_with_name.cpp": "cbcf6ad8275c3fdcb15a174729c1372d0d1baf92b98c2085c510c1f729bf8cd3",
+    "vendor/28ef85a7198eab82115087f8b3c82fa9f49ff961/tts_probe.cpp": "72a057c03b41028551733e53b4ddf90f0ee7ce7f47154a590c32fd0e2027b164",
+    "vendor/28ef85a7198eab82115087f8b3c82fa9f49ff961/watchdog.cpp": "2c12427ab977b03e1e726ee2fa9d1be90e62d431faa6a4b9322a68d9d47d52f3"
+  },
+  "adapter_files": {
+    "deployment/CMakeLists.txt": "7e36e32793251028738eb28f452812c61d03a9b37424f9ab324445711ff8d2c6"
+  },
+  "upstream_source_modified": false,
+  "controllers_started": false,
+  "publication_note": "Historical provenance; anonymized snapshot hashes are in root release-manifest.json"
+}
